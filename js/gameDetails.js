@@ -21,3 +21,4 @@ function rellenarCampos(){
     document.querySelector(".library_hero_img").setAttribute("src", juegos[0].banner)
 }
 
+

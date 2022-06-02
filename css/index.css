@@ -1,25 +1,197 @@
-html {
-  margin: 8px;
+body{
+  background-image: url(/assets/img/imagen-fondo3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
 }
+
+/* CONTAINER HEADER */
 .container-header {
   display: flex;
-  margin: 10px;
+  margin-top: 10px;
 }
 .container-carrusel {
   width: 80vw;
   height: 100%;
 }
+.carousel-caption{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+.imagen-carrusel{
+  height: 550px;
+}
 .container-descripcion .card-body {
   width: 20vw;
 }
+/* FIN CONTAINER HEADER */
+
+/* CATEGORIAS */
+.title{
+  color: white;
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.juegos-list{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 5em;
+  position: relative;
+}
+.card-container{
+  position: absolute;
+  width: 92%;
+  height: 220px;
+  display: flex;
+  margin: 15px 50px 50px 50px;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar{
+  display: none;
+  
+}
+.card{
+  position: relative;
+  width: 250px;
+  height: 200px;
+  border-radius: 3px;
+  border: none;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: .5s;    
+}
+.card img{
+  width: 100%;
+  height: 200px;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+
+.card:hover .card-body{
+  opacity: 1;
+}
+
+.card-body{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  background: rgba(138, 28, 28, 0.712);
+  transition: 0.5ms;
+}
+
+.juego-tittle{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  /*display: flex;
+  justify-content: center;*/
+  text-align: center;
+  padding: 1em;
+  text-shadow: 4px 4px 6px rgb(0 0 0 / 90%);
+}
+.des{
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 8px;
+  margin: 0;
+  text-shadow: 4px 4px 6px rgb(0 0 0 / 80%);    
+}
+.verJuego-btn{
+  position: absolute;
+  width: 50%;
+  bottom: 5%;
+  border: none; 
+  text-align: center;
+  color: rgb(0, 0, 0, 0.5);
+  background-color: red;
+  margin-left: 45px;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+
+.verJuego-btn:hover{
+  
+}
+
+.flecha-izq, .flecha-der {
+  position: absolute;
+  background: transparent;
+  margin-top: 15px;
+  border: none;
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: auto;
+  width: 50px;
+  color: red;
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+  text-shadow: 4px 4px 6px rgb(0 0 0 / 100%);
+}
+
+.card-body a{
+  text-decoration: none;
+  color:black;
+}
+
+.card-body a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+.flecha-izq {
+  left: 0;
+  margin-left: 5px;
+}
+
+.flecha-der {
+  right: 0;
+  margin-right: 5px;
+}
+/* FIN CATEGORIAS */
 
 @media screen and (max-width: 850px) {
-  .container-header {
-    display: block;
+  .container-carrusel {
+    width: 100vw;
   }
-  .container-descripcion .card-body {
-    width: 100%;
-    justify-content: center;
+  .imagen-carrusel{
+    height: 320px;
+  }
+  .categorias{
     text-align: center;
   }
+  .card {
+    width: 150;
+    height: auto;
+}
+.flecha-izq {
+  left: 0;
+  margin-left: 2px;
+}
+
+.flecha-der {
+  right: 0;
+  margin-right: 2px;
+}
 }

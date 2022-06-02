@@ -1,5 +1,5 @@
 body{
-    background: url(./bg-404.jpg.png) no-repeat fixed;
+    background: url(/assets/bg-404.jpg.png) no-repeat fixed;
     background-size: cover;
 }
 .container{

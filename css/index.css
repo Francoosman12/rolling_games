@@ -130,7 +130,7 @@ body{
 }
 
 .verJuego-btn:hover{
-  
+  width: 52%;
 }
 
 .flecha-izq, .flecha-der {
@@ -187,11 +187,11 @@ body{
 }
 .flecha-izq {
   left: 0;
-  margin-left: 2px;
+  margin-left: 1px;
 }
 
 .flecha-der {
   right: 0;
-  margin-right: 2px;
+  margin-right: 1px;
 }
 }

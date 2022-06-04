@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=
         , initial-scale=1.0">
     <title>Document</title>
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="#" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script> -->
+    <!-- //////////////////////////////////////////////////////////////////// -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       
@@ -61,7 +72,7 @@
     <section>
         <div class="library_hero_container">
             <div class="overlay"></div>
-            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1190460/library_hero.jpg" alt="" class="library_hero_img">
+            <img src="" alt="" class="library_hero_img">
             
         </div>
     </section>
@@ -69,32 +80,32 @@
       <div class="row d-none d-sm-block d-md-none">
 
         <div class="container_poster2 text-center ">
-          <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2715/ccTNECyr1IGEMh28b63gZzOv.png" alt="" class="library_poster2" id="library_poster2" >
+          <img src="" alt="" class="library_poster2" id="library_poster2" >
       </div>
       </div>
 
         <div class="row">
             <div class="col">
                 
-                <h3 class="text-center description_title" id="game_title">DEATH STRANDING DIRECTOR'S CUT</h3>
-
+                <h3 class="text-center description_title" id="game_title"></h3>
+                <!-- carousel -->
                 <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
                     <!-- slides -->
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_ac7c64c8d10bb5786694891e4a22b07a5da7dd6f.1920x1080.jpg?t=1649058967" alt="Hills">
+                      <div class="carousel-item active">                        
+                        <video id="video1" controls autoplay muted src=""></video>
                       </div>
             
                       <div class="carousel-item">
-                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_4370916476e44c78b50bfee175f1d82285f6bfd7.600x338.jpg?t=1649058967" alt="Hills">
+                        <img id="screenshot1" src="" alt="Hills">
                       </div>
             
                       <div class="carousel-item">
-                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_39f107106c83eb3717a1061fa1da0f2f4bdf3993.1920x1080.jpg?t=1649058967" alt="Hills">
+                        <img id="screenshot2" src="" alt="Hills">
                       </div>
             
                       <div class="carousel-item">
-                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_c1d15216b7e8ccbcb73f462c4eaf6ef564679c94.1920x1080.jpg?t=1649058967" alt="Hills">
+                        <img id="screenshot3" src="" alt="Hills">
                       </div>
                     </div>
             
@@ -109,48 +120,44 @@
                     <!-- Thumbnails -->
                     <ol class="carousel-indicators list-inline">
                       <li class="list-inline-item active">
-                        <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel">
-                          <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_ac7c64c8d10bb5786694891e4a22b07a5da7dd6f.1920x1080.jpg?t=1649058967" class="img-fluid">
+                        <a id="carousel-selector-0" class="selected" data-bs-slide-to="0" data-bs-target="#custCarousel">
+                          <img src="../assets/videoplay.png" class="img-fluid">
                         </a>
                       </li>
             
                       <li class="list-inline-item">
-                        <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel">
-                          <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_4370916476e44c78b50bfee175f1d82285f6bfd7.600x338.jpg?t=1649058967" class="img-fluid">
+                        <a id="carousel-selector-1" data-bs-slide-to="1" data-bs-target="#custCarousel">
+                          <img id="thumbnail1" src="" class="img-fluid">
                         </a>
                       </li>
             
                       <li class="list-inline-item">
-                        <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel">
-                          <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_39f107106c83eb3717a1061fa1da0f2f4bdf3993.1920x1080.jpg?t=1649058967"  class="img-fluid">
+                        <a id="carousel-selector-2" data-bs-slide-to="2" data-bs-target="#custCarousel">
+                          <img id="thumbnail2" src=""  class="img-fluid">
                         </a>
                       </li>
             
                        <li class="list-inline-item">
-                        <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel">
-                          <img src="https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_c1d15216b7e8ccbcb73f462c4eaf6ef564679c94.1920x1080.jpg?t=1649058967"  class="img-fluid">
+                        <a id="carousel-selector-2" data-bs-slide-to="3" data-bs-target="#custCarousel">
+                          <img id="thumbnail3" src=""  class="img-fluid">
                         </a>
                       </li>
                      </ol>
                   </div>
-
+                <!-- carousel -->
                   <div class="description_container">
-                    <p class="description" id="description">From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Stay connected with the "Social Strand System™”.
-        
-                        Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world one step at a time.
-                        
-                        Starring Norman Reedus, Mads Mikkelsen, Léa Seydoux, and Lindsay Wagner.</p>
+                    <p class="description" id="description"></p>
                 </div>
 
 
             </div>
             <div class="col text-center ">
                 <div class="container_poster">
-                    <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2715/ccTNECyr1IGEMh28b63gZzOv.png" alt="" class="library_poster" id="library_poster" >
+                  <img src="" alt="" class="library_poster" id="library_poster" >
                 </div>
                 <div class="div flex-column">
-                    <button type="button" class="btn btn-success btn-lg mt-3" id="button_buy">Buy</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg mt-3" id="button_cart">Add to Cart</button>
+                  <button type="button" class="btn btn-success btn-lg mt-3" id="button_buy">Buy</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg mt-3" id="button_cart">Add to Cart</button>
                 </div>
                 
 
@@ -159,13 +166,33 @@
         
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+
+<script src="../js/games.js"></script>
 <script src="../js/gameDetails.js"></script>
+
 
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
+<!-- ////////////////////////////////////////////////////////////// -->
+<!-- <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript">
+      
+    </script>
+    <script type="text/javascript">
+      var myLink = document.querySelector('a[href="#"]');
+      myLink.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+    </script> -->
+<!-- ///////////////////////////////////////////////////////// -->
 </body>
 </html>

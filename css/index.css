@@ -29,6 +29,11 @@ body{
 }
 /* FIN CONTAINER HEADER */
 
+/* MODAL */
+.form-label{
+  color: black;
+}
+
 /* CATEGORIAS */
 .title{
   color: white;

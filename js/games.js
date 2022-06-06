@@ -12,6 +12,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/952060/ss_ef618256720e6e665f4b8b5dd11726a561e0b16e.600x338.jpg?t=1644282235",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/952060/ss_34f01910d65fb171a27e058cb74623c0eb53ba69.600x338.jpg?t=1644282235",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256770136/movie480.webm?t=1576626942",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/952060/136b7a39787b0d8df93cf3b757c36ae1eb392784.jpg",
       "price": "39.99",
       "published": true
     },
@@ -28,6 +29,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1384160/ss_2561a4ae822856797b5fb231502b820a962336e0.600x338.jpg?t=1653629269",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1384160/ss_104e16788c2ea35e1dac31d96be8d4f1df00f330.600x338.jpg?t=1653629269",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256837800/movie480_vp9.webm?t=1623134140",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1384160/7f533439eee06521bb022a7afba5e6eb3f604003.jpg",
       "published": true
     },
     {
@@ -43,6 +45,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_25cd489871907387c1b915022a96b196661b6e17.600x338.jpg?t=1654109255",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_3e556415d1bda00d749b2166ced264bec76f06ee.600x338.jpg?t=1654109255",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256864390/movie480_vp9.webm?t=1646817712",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1245620/b6e290dd5a92ce98f89089a207733c70c41a1871.jpg",
       "published": true
     },
     {
@@ -58,6 +61,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/0000001865.600x338.jpg?t=1591063154",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/0000001866.600x338.jpg?t=1591063154",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/904/movie480.webm?t=1569623096",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/220/fcfb366051782b8ebf2aa297f3b746395858cb62.jpg",
       "published": true
     },
     {
@@ -73,6 +77,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/502500/ss_66e4f50c10b0edcb63b6eb41bdbf2b376f34a924.600x338.jpg?t=1653601579",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/502500/ss_dffc5d16dc8a2aa526d0da65da7a4cd4d7761307.600x338.jpg?t=1653601579",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256863957/movie480_vp9.webm?t=1638963566",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/502500/f7e1587f3521cacbdebd07b25c05103a963160a8.jpg",
       "published": true
     },
     {
@@ -88,6 +93,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1190460/ss_4370916476e44c78b50bfee175f1d82285f6bfd7.600x338.jpg?t=1649058967",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1190460/ss_39f107106c83eb3717a1061fa1da0f2f4bdf3993.600x338.jpg?t=1649058967",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256814570/movie480_vp9.webm?t=1608214699",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1190460/f0410ecb7b632cbc9c156fd7069310e29a5b9f88.jpg",
       "published": true
     },
     {
@@ -103,6 +109,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/ss_1c0fa39091901496d77cf4cecfea4ffb056d6452.600x338.jpg?t=1653584490",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/ss_1318a04ef11d87f38aebe6d47a96124f8f888ca8.600x338.jpg?t=1653584490",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256663134/movie480.webm?t=1511366737",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/374320/7abe1a33129c20cf10d2c74128bbd657a2a2c806.jpg",
       "published": true
     },
     {
@@ -118,6 +125,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/678950/ss_1702e9bc7ba4ce2dce2555c8d63612aafb5c757a.600x338.jpg?t=1653936849",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/678950/ss_3f18dbe6561ea68c5acb055e3eaa97f480022c24.600x338.jpg?t=1653936849",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256827868/movie480_vp9.webm?t=1617120099",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/678950/ebac40c0f7452dcafd40d0fb0ad52c2ae10639f5.jpg",
       "published": true
     },
     {
@@ -133,6 +141,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/379720/ss_ac05e086b8f0580bc95970fbb6f18a7e4fe65404.600x338.jpg?t=1593395083",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/379720/ss_d7ee83faf64036494e4a817b8be55b044fbe7c6c.600x338.jpg?t=1593395083",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256664074/movie480.webm?t=1462985736",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/379720/b6e72ff47d1990cb644700751eeeff14e0aba6dc.jpg",
       "published": true
     },
     {
@@ -148,6 +157,7 @@ let juegos =  [
       "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_67261dc701d58d1cdb581e155fb7185c7e8d6c90.600x338.jpg?t=1653013657",
       "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_303a91a683131f7deb6e07c304c48ccaf1c4edf1.600x338.jpg?t=1653013657",
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256869158/movie480_vp9.webm?t=1643680783",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1498570/66b75e0a9bb33320565802f743f18a62fe25396b.jpg",
       "published": true
-    }  
+    }
   ];

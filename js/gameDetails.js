@@ -1,4 +1,4 @@
-// let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
+let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
 
 
 function rellenarCampos(){

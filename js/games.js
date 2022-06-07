@@ -1,4 +1,4 @@
-let juegos =  [
+let listaJuegos =  [
     {
       "id": "1",
       "title": "Resident Evil 3",
@@ -159,5 +159,89 @@ let juegos =  [
       "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256869158/movie480_vp9.webm?t=1643680783",
       "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1498570/66b75e0a9bb33320565802f743f18a62fe25396b.jpg",
       "published": true
+    },
+    {
+      "id": "11",
+      "title": "HITMAN 3",
+      "genre": ["Action"],
+      "description": "Death Awaits. Agent 47 returns in HITMAN 3, the dramatic conclusion to the World of Assassination trilogy.",
+      "developer":"IO Interactive A/S",
+      "release_date":"2022",
+      "poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/library_600x900_2x.jpg?t=1645711365",
+      "banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/library_hero.jpg?t=1645711365",
+      "screenshot1": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/ss_dfb0e83ac7cbbaf0eb24d38e572e3b99e1eaad16.jpg",
+      "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/ss_33539163983d92cc770717b26b6f449f145d45a7.jpg",
+      "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/ss_86e7654dd65110c45d134be1bf6c2411408310cc.jpg",
+      "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256865936/movie_max.webm",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1659040/48dc1a866e9bb49a5496043c32c945c2fa18fb8f.jpg",
+      "published": true
+    },
+    {
+      "id": "12",
+      "title": "Nioh 2 – The Complete Edition",
+      "genre": ["Action","RPG"],
+      "description": "Battle hordes of yokai in this masocore Action RPG. Create your protagonist and embark on an adventure through a myriad of locales across Japan during the Sengoku period. Utilize the new Yokai Shift ability to defeat even the most ferocious yokai and be prepared to brave through Dark Realms created by your enemies.",
+      "developer":"KOEI TECMO GAMES CO., LTD.",
+      "release_date":"2021",
+      "poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/1325200/library_600x900_2x.jpg?t=1624436267",
+      "banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/1325200/library_hero.jpg?t=1624436267",
+      "screenshot1": "https://cdn.cloudflare.steamstatic.com/steam/apps/1325200/ss_c8ad5efb3acdb4099f77b8b611289e2aa00cd19c.jpg",
+      "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1325200/ss_bb996dea7ada75409e8c328b4f60e1f262e165d9.jpg",
+      "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1325200/ss_7fcca74473ea2678e90ee4cff018392007b8f1c0.jpg",
+      "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256821620/movie_max.webm",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1325200/3c0fa7884573c619e65a173f00aaa6c0f499d2ec.jpg",
+      "published": true
+    },
+    {
+      "id": "13",
+      "title": "Hollow Knight",
+      "genre": ["Action"],
+      "description": "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
+      "developer":"Team Cherry",
+      "release_date":"2017",
+      "poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/library_600x900_2x.jpg?t=1568794877",
+      "banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/library_hero.jpg?t=1568794877",
+      "screenshot1": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_5384f9f8b96a0b9934b2bc35a4058376211636d2.jpg",
+      "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_d5b6edd94e77ba6db31c44d8a3c09d807ab27751.jpg",
+      "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_a81e4231cc8d55f58b51a4a938898af46503cae5.jpg",
+      "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256679401/movie_max.webm",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/367520/7b87aecda896ae747a6e40e3eb63498cb8b84df2.jpg",
+      "published": true
+    },
+    {
+      "id": "14",
+      "title": "Tomb Raider",
+      "genre": ["Action","Adventure"],
+      "description": "Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor.",
+      "developer":"Crystal Dynamics",
+      "release_date":"2013",
+      "poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/library_600x900_2x.jpg?t=1589551530",
+      "banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/library_hero.jpg?t=1589551530",
+      "screenshot1": "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_65861a8ea2efcb01fca8aa4b1233663bb053ab54.jpg",
+      "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_cd920308517efb19c11b44e251af89e40fb412d5.jpg",
+      "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_8f34a87469f3a0c73049cbd0469bdff6e3d22713.jpg",
+      "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256663328/movie_max.webm",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/203160/3ee640a8aba6992678e36f4e40cba9c71c02348b.jpg",
+      "published": true
+    },
+    {
+      "id": "15",
+      "title": "Resident Evil Village",
+      "genre": ["Action"],
+      "description": "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.",
+      "developer":"CAPCOM Co., Ltd.",
+      "release_date":"2021",
+      "poster": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/library_600x900_2x.jpg?t=1637955636",
+      "banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/library_hero.jpg?t=1637955636",
+      "screenshot1": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/ss_d25704b01be292d1337df4fea0fba2aab322b58a.jpg",
+      "screenshot2": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/ss_50283e6df9d2f3f24ff4a1a36a94ae307e21cee8.jpg",
+      "screenshot3": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/ss_363d9c05ee0a974b766938610a3352e7a89b9c92.jpg",
+      "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256825272/movie_max.webm",
+      "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1196590/d97fb0681f9517c65a9d7ba9dd7e63f775375645.jpg",
+      "published": true
     }
   ];
+
+  if (JSON.parse(localStorage.getItem("juegos"))==null){
+    localStorage.setItem("juegos", JSON.stringify(listaJuegos));
+  }

@@ -72,7 +72,7 @@ let listaJuegos = [
   {
     id: "4",
     title: "Half-Life 2",
-    genre: ["Action", "FPS"],
+    genre: ["Action"],
     description:
       '1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling. Valve\'s debut title wins more than 50 game-of-the-year awards on its way to being named "Best PC Game Ever" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide.',
     developer: "Valve",
@@ -256,7 +256,7 @@ let listaJuegos = [
   {
     id: "12",
     title: "Nioh 2 – The Complete Edition",
-    genre: ["Action", "RPG"],
+    genre: ["Action"],
     description:
       "Battle hordes of yokai in this masocore Action RPG. Create your protagonist and embark on an adventure through a myriad of locales across Japan during the Sengoku period. Utilize the new Yokai Shift ability to defeat even the most ferocious yokai and be prepared to brave through Dark Realms created by your enemies.",
     developer: "KOEI TECMO GAMES CO., LTD.",

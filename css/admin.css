@@ -3,16 +3,22 @@
 }
 
 body {
-    font-size: 1.25rem;
+    
     /* background-color: #f6f8fa; */
     background-color: rgb(18, 18, 18);  
     color: white;       
 }
 
 .table{
-    color: white
+    color: white;
+    font-size: 1.00rem;
 }
 
 td {
-    line-height: 3rem;
+    line-height: 2.0rem;
+}
+
+.gameLink {
+    color: white !important;
+    text-decoration: none; /* no underline */
 }

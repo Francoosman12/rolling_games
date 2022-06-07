@@ -1,3 +1,7 @@
+html {
+  margin: 1% 2%;
+  scroll-behavior: smooth;
+}
 body{
   background-image: url(/assets/img/imagen-fondo3.jpg);
   background-position: center center;
@@ -10,7 +14,7 @@ body{
 /* CONTAINER HEADER */
 .container-header {
   display: flex;
-  margin-top: 10px;
+  margin-top: 70px;
 }
 .container-carrusel {
   width: 100vw;

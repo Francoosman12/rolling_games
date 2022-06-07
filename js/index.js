@@ -25,7 +25,7 @@ let actionGames = juegos.filter((juego) => juego.genre == "Action");
 let cargarGames = () => {
   actionGames.forEach((juego, index) => {
     let div = document.createElement("div");
-    div.setAttribute("class", "col col-md col-lg");
+    div.setAttribute("class", "col-6 col-md-3 col-lg-2");
     let cardContent = `<div class="card border">
                     <a class="game" onclick="mostrarDetalles(${index})" href="../pages/gameDetails.html">
                     <img src="${juego.poster}" alt="">

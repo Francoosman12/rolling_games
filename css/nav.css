@@ -1,4 +1,9 @@
-body {
+html {
+  margin: 1% 8%;
+  scroll-behavior: smooth;
+}
+
+nav {
   font-family: sans-serif;
 }
 

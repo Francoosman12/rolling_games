@@ -1,8 +1,6 @@
 let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
 let generos = ["Action","Horror","Fighting","Action RPG","RPG","FPS","Flight","Shooter"]
 
-
-
 let gameContainer = document.getElementById("gameContainer")
 
 const loadGames=()=>{   

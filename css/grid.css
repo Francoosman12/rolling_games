@@ -1,6 +1,10 @@
-body {
+/* body {
   background-color: rgb(18, 18, 18);
 }
+
+.titleText{
+  color: white;
+} */
 
 .card {
   background-color: transparent;
@@ -13,7 +17,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   display: block;
-  /* text-overflow: ellipsis; */
+  text-overflow: ellipsis;
 }
 
 .card .genre {

@@ -1,38 +1,50 @@
-// const navToggle = document.querySelector(".nav-toggle");
-// const navMenu = document.querySelector(".nav-menu");
-
-// navToggle.addEventListener("click", () => {
-//   navMenu.classList.toggle("nav-menu_visible");
-
-//   if (navMenu.classList.contains("nav-menu_visible")) {
-//     navToggle.setAttribute("aria-label", "Cerrar menú");
-//   } else {
-//     navToggle.setAttribute("aria-label", "Abrir menú");
-//   }
-// });
-
-// function bajar() {
-//   const header = document.getElementById("header");
-//   header.classList.toggle("stick", window.scrollY > 0);
-// }
-
-// window.addEventListener("scroll", bajar);
-
 // CAROUSEL CATEGORIAS SLIDER
 
 let cardContainer = [...document.querySelectorAll(".card-container")];
-let izquierdaBoton = [...document.querySelectorAll(".flecha-izq")];
-let derechaBoton = [...document.querySelectorAll(".flecha-der")];
 
-cardContainer.forEach((item, i) => {
-  let containerDimensions = item.getBoundingClientRect();
-  let containerWidth = containerDimensions.width;
+//CARRUSEL CATEGORIAS
 
-  derechaBoton[i].addEventListener("click", () => {
-    item.scrollLeft += containerWidth - 200;
+//ACCION
+
+let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
+let generos = [
+  "Action",
+  "Horror",
+  "Fighting",
+  "Action RPG",
+  "RPG",
+  "FPS",
+  "Flight",
+  "Shooter",
+  "Adventure",
+];
+
+let gameContainer = document.getElementById("action-carrousel");
+let actionGames = juegos.filter((juego) => juego.genre.includes("Action"));
+
+let cargarGames = () => {
+  actionGames.forEach((juego, index) => {
+    let genres = (juego.genre).join(', ')
+        let div=document.createElement('div')
+        div.setAttribute("class","col-6 col-md-3 col-lg-2")        
+        let cardContent=`<div class="card">
+                    <a class="game" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
+                    <img src="${juego.poster}" alt="">
+                    </a>                    
+                    <div class="card-body p-1">
+                    <h5 title="${juego.title}" class="card-title">${juego.title}</h5>
+                    <span class="card-text genre">${genres}</p>
+                    <span class="card-text">$${juego.price||59.99}</p>
+                    </div>
+                    
+                </div>`
+        div.innerHTML=cardContent
+        gameContainer.appendChild(div)
   });
+};
 
-  izquierdaBoton[i].addEventListener("click", () => {
-    item.scrollLeft -= containerWidth + 200;
-  });
-});
+cargarGames();
+
+function mostrarDetalles(e) {
+  location.replace = `./pages/gameDetails.html?gameID=${juego.id}`;
+}

@@ -1,6 +1,5 @@
 let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
 
-
 let gameContainer = document.getElementById("gameContainer")
 
 const loadGames=()=>{   

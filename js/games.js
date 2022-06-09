@@ -3,7 +3,8 @@ let listaJuegos = [
         "id": 1,
         "title": "Resident Evil 3",
         "genre": [
-            "Action"
+            "Action",
+            "Shooter"
         ],
         "description": "Jill Valentine is one of the last remaining people in Raccoon City to witness the atrocities Umbrella performed. To stop her, Umbrella unleashes their ultimate secret weapon: Nemesis! Also includes Resident Evil Resistance, a new 1 vs 4 online multiplayer game set in the Resident Evil universe.",
         "developer": "CAPCOM Co., Ltd.",
@@ -58,7 +59,9 @@ let listaJuegos = [
         "id": 4,
         "title": "Half-Life 2",
         "genre": [
-            "Action"
+            "Action",
+            "Shooter",
+            "FPS"
         ],
         "description": "1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling. Valve's debut title wins more than 50 game-of-the-year awards on its way to being named \"Best PC Game Ever\" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide.",
         "developer": "Valve",
@@ -150,7 +153,9 @@ let listaJuegos = [
         "id": 9,
         "title": "DOOM",
         "genre": [
-            "Action"
+            "Action",
+            "Shooter",
+            "FPS"
         ],
         "description": "Now includes all three premium DLC packs (Unto the Evil, Hell Followed, and Bloodfall), maps, modes, and weapons, as well as all feature updates including Arcade Mode, Photo Mode, and the latest Update 6.66, which brings further multiplayer improvements as well as revamps multiplayer progression.",
         "developer": "id Software",
@@ -263,7 +268,8 @@ let listaJuegos = [
         "id": 15,
         "title": "Resident Evil Village",
         "genre": [
-            "Action"
+            "Action",
+            "FPS"
         ],
         "description": "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.",
         "developer": "CAPCOM Co., Ltd.",
@@ -300,7 +306,9 @@ let listaJuegos = [
         "id": 17,
         "title": "DOOM Eternal",
         "genre": [
-            "Action"
+            "Action",
+            "Shooter",
+            "FPS"
         ],
         "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
         "developer": "id Software",
@@ -376,7 +384,8 @@ let listaJuegos = [
         "title": "Red Dead Redemption 2",
         "genre": [
             "Action",
-            "Adventure"
+            "Adventure",
+            "Shooter"
         ],
         "description": "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.",
         "developer": "Rockstar Games",
@@ -407,24 +416,6 @@ let listaJuegos = [
         "screenshot3": "https://cdn.akamai.steamstatic.com/steam/apps/292030/ss_eda99e7f705a113d04ab2a7a36068f3e7b343d17.1920x1080.jpg?t=1646996408",
         "video": "http://cdn.akamai.steamstatic.com/steam/apps/256658589/movie480.mp4?t=1528288687",
         "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/capsule_231x87.jpg"
-    },
-    {
-        "id": 23,
-        "title": "DARK SOULS™ III",
-        "genre": [
-            "Action"
-        ],
-        "description": "Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!",
-        "developer": "FromSoftware, Inc.",
-        "release_date": "11 Apr, 2016",
-        "poster": "https://steamcdn-a.akamaihd.net/steam/apps/374320/library_600x900_2x.jpg",
-        "banner": "https://steamcdn-a.akamaihd.net/steam/apps/374320/library_hero.jpg",
-        "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/logo.png",
-        "screenshot1": "https://cdn.akamai.steamstatic.com/steam/apps/374320/ss_5efd318b85a3917d1c6e717f4cb813b47547cd6f.1920x1080.jpg?t=1653584490",
-        "screenshot2": "https://cdn.akamai.steamstatic.com/steam/apps/374320/ss_1c0fa39091901496d77cf4cecfea4ffb056d6452.1920x1080.jpg?t=1653584490",
-        "screenshot3": "https://cdn.akamai.steamstatic.com/steam/apps/374320/ss_1318a04ef11d87f38aebe6d47a96124f8f888ca8.1920x1080.jpg?t=1653584490",
-        "video": "http://cdn.akamai.steamstatic.com/steam/apps/256663134/movie480.mp4?t=1511366737",
-        "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/capsule_231x87.jpg"
     },
     {
         "id": 24,
@@ -504,7 +495,8 @@ let listaJuegos = [
         "title": "Resident Evil 7 Biohazard",
         "genre": [
             "Action",
-            "Adventure"
+            "Adventure",
+            "FPS"
         ],
         "description": "Fear and isolation seep through the walls of an abandoned southern farmhouse. &quot;7&quot; marks a new beginning for survival horror with the “Isolated View” of the visceral new first-person perspective.",
         "developer": "CAPCOM Co., Ltd.",
@@ -578,7 +570,9 @@ let listaJuegos = [
         "id": 32,
         "title": "QUAKE",
         "genre": [
-            "Action"
+            "Action",
+            "Shooter",
+            "FPS"
         ],
         "description": "Developed by the award-winning id Software, Quake® is the ground-breaking, original dark fantasy first-person shooter that inspires today’s retro-style FPS games. With Quake (Enhanced), experience the authentic, updated, and visually enhanced version of the original.",
         "developer": "id Software",
@@ -593,30 +587,13 @@ let listaJuegos = [
         "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/2310/capsule_231x87.jpg"
     },
     {
-        "id": 33,
-        "title": "DOOM Eternal",
-        "genre": [
-            "Action"
-        ],
-        "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
-        "developer": "id Software",
-        "release_date": "20 Mar, 2020",
-        "poster": "https://steamcdn-a.akamaihd.net/steam/apps/782330/library_600x900_2x.jpg",
-        "banner": "https://steamcdn-a.akamaihd.net/steam/apps/782330/library_hero.jpg",
-        "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/logo.png",
-        "screenshot1": "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_4f93a7c5003d49cb32f6c0c6e547452b284580a0.1920x1080.jpg?t=1639072952",
-        "screenshot2": "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_7e6a2148321c8024285e3924903d8897cac95358.1920x1080.jpg?t=1639072952",
-        "screenshot3": "https://cdn.akamai.steamstatic.com/steam/apps/782330/ss_af3b43c4be0029b52ceefaf55ebe1918e2cb3471.1920x1080.jpg?t=1639072952",
-        "video": "http://cdn.akamai.steamstatic.com/steam/apps/256857551/movie480.mp4?t=1635282017",
-        "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/capsule_231x87.jpg"
-    },
-    {
         "id": 34,
         "title": "Black Mesa",
         "genre": [
             "Action",
             "Adventure",
-            "Indie"
+            "Shooter",
+            "FPS"
         ],
         "description": "Relive Half-Life.",
         "developer": "Crowbar Collective",

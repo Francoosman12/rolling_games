@@ -5,8 +5,8 @@ const cargarTabla = () => {
   juegos.map(function (juego, index) {
     trHTML += "<tr>";
     trHTML += `<td>${juego.id}</td>`;
-    trHTML += `<td><a onclick="mostrarDetalles(${index})" href="../pages/gameDetails.html"><img width="32px" src="${juego.icon}" class="avatar"></a></td>`;
-    trHTML += `<td><a class="gameLink" onclick="mostrarDetalles(${index})" href="../pages/gameDetails.html">${juego.title}</a></td>`;
+    trHTML += `<td><a onclick="mostrarDetalles(${index})" href="../pages/gameDetails.html?gameID=${juego.id}"><img width="100px" src="${juego.icon}" class="avatar"></a></td>`;
+    trHTML += `<td><a class="gameLink" onclick="mostrarDetalles(${index})" href="../pages/gameDetails.html?gameID=${juego.id}">${juego.title}</a></td>`;
     trHTML += `<td>${juego.release_date}</td>`;
     trHTML += `<td>${juego.developer}</td>`;
     trHTML += `<td><button type="button" class="btn btn-outline-secondary" onclick="showUserEditBox('${juego.id}')">Edit</button>`;
@@ -19,9 +19,5 @@ const cargarTabla = () => {
 cargarTabla();
 
 function mostrarDetalles(e){
-  let selectedGame = e
-  event.preventDefault()
-  console.log(e)
-  localStorage.setItem("selectedGame", JSON.stringify(selectedGame));
-  window.location.href = "../pages/gameDetails.html";
+  location.replace = `../pages/gameDetails.html?gameID=${juego.id}`;
 }

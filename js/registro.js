@@ -1,27 +1,21 @@
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
+class Usuario {
+  constructor(nombre, apellido, email, password, rol = "usuario") {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.password = password;
+    this.rol = rol;
+  }
+}
+
 function guardarUsuario() {
   let nombre = document.getElementById("textName").value;
   let apellido = document.getElementById("textSurname").value;
-  let country = document.getElementById("country").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let password2 = document.getElementById("password2").value;
-
-  //Agregar class
-
-  //   let newUser = {
-  //     id: usuarios.length + 1,
-  //     nombre: nombre,
-  //     apellido: apellido,
-  //     country: country,
-  //     email: email,
-  //     password: password,
-  //   };
-
-  usuarios.push(new Usuario());
-  //   let usuarioLS = JSON.stringify(usuarios);
-  //   localStorage.setItem("usuarios", usuarioLS);
 
   //VALIDAR CONTRASEÑAS
   if (password !== password2) {
@@ -37,9 +31,14 @@ function guardarUsuario() {
       "El correo ya esta registrado. Inicie sesion con su email y contraseña."
     );
   }
+
+  usuarios.push(new Usuario(nombre, apellido, email, password));
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+  document.getElementById("formRegistro").reset();
+  alert("Usuario registrado con éxito.");
+  location.replace("../index.html");
 }
 
-guardarUsuario();
-// formRegistro.reset();
-
-// }
+document
+  .getElementById("formRegistro")
+  .addEventListener("submit", guardarUsuario);

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Registro</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="foto-navbar"
+                    src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link botones active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#formRegistro"
+                            href="#">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FIN DE NAVBAR -->
+
+    <!-- REGISTRO -->
+    <div class="container-title">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Registrarse</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-registro d-flex">
+        <div class="form-registro">
+            <div class="row">
+                <div class="col-md-12 col-lg-9 ">
+                    <form>
+                        <div class="mb-3">
+                            <label for="textName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="textName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="textSurname" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="textSurname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text text-white">We'll never share your email with
+                                anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2" class="form-label">Repetir Password</label>
+                            <input type="password" class="form-control" id="password2">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="gif-registro">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <img src="https://img.itch.zone/aW1nLzIxMTExODMuZ2lm/original/hihbxp.gif" class="gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN DE REGISTRO -->
+
+    <script src="../js/registro.js"></script>
+
+</body>
+
+</html>

@@ -11,7 +11,7 @@ function handleSubmit(e){
             if(validacion.password === pass){
                 //guardamos la sesion del usuario
                 localStorage.setItem('user',JSON.stringify(validacion))
-                location.replace('#');
+                location.replace('./index.html');
             }else{
                 alert('El correo o password son incorrectos')
             }

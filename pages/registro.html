@@ -58,33 +58,34 @@
         <div class="form-registro">
             <div class="row">
                 <div class="col-md-12 col-lg-9 ">
-                    <form>
+                    <form id="formRegistro">
                         <div class="mb-3">
                             <label for="textName" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="textName">
+                            <input type="text" class="form-control" id="textName" required>
                         </div>
                         <div class="mb-3">
                             <label for="textSurname" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="textSurname">
+                            <input type="text" class="form-control" id="textSurname" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" required id="email" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text text-white">We'll never share your email with
                                 anyone else.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" class="form-control" id="password" required>
                         </div>
                         <div class="mb-3">
                             <label for="password2" class="form-label">Repetir Password</label>
-                            <input type="password" class="form-control" id="password2">
+                            <input type="password" class="form-control" id="password2" required>
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label text-white" for="exampleCheck1">Acepta los términos y
+                                condiciones.</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

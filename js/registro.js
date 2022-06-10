@@ -10,7 +10,8 @@ class Usuario {
   }
 }
 
-function guardarUsuario() {
+const guardarUsuario = function (e) {
+  e.preventDefault();
   let nombre = document.getElementById("textName").value;
   let apellido = document.getElementById("textSurname").value;
   let email = document.getElementById("email").value;
@@ -37,8 +38,7 @@ function guardarUsuario() {
   document.getElementById("formRegistro").reset();
   alert("Usuario registrado con éxito.");
   location.replace("../index.html");
-}
+};
 
-document
-  .getElementById("formRegistro")
-  .addEventListener("submit", guardarUsuario);
+document.getElementById("formRegistro");
+addEventListener("submit", guardarUsuario);

@@ -31,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav" id="listaMenu">
                     <li class="nav-item">
-                        <a class="nav-link botones active" href="#">Inicio</a>
+                        <a class="nav-link botones active" href="./index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="loginNav">
                         <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             href="#">Login</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="regNav">
                         <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
                             href="./pages/registro.html">Registro</a>
                     </li>
@@ -49,7 +49,7 @@
     <!-- FIN DE NAVBAR -->
 
     <!-- MODAL DE LOGIN -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-dark">
@@ -57,7 +57,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark">
-                    <form class="form-login">
+                    <form id="form-login">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Correo</label>
                             <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
@@ -112,9 +112,10 @@
 <script src="https://kit.fontawesome.com/d89f74f11d.js" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
 <script src="./js/games.js"></script>
-<script src="./js/registro.js"></script>
+<!-- <script src="./js/registro.js"></script> -->
 <script src="./js/gamesDestacados.js"></script>
 <script src="./js/carrousel.js"></script>
+<script src="./js/login.js"></script>
 
 </body>
 

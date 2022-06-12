@@ -30,35 +30,36 @@
   <header>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="foto-navbar"
-                  src="./assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav" id="listaMenu">
-                  <li class="nav-item">
-                      <a class="nav-link botones active" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                          href="#">Login</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
-                          href="./pages/registro.html">Registro</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+       <!-- Navbar -->
 
-  <!-- FIN DE NAVBAR -->
-  </header>
+       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="foto-navbar"
+                    src="./assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" id="listaMenu">
+                    <li class="nav-item">
+                        <a class="nav-link botones active" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item" id="loginNav">
+                        <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            href="#">Login</a>
+                    </li>
+                    <li class="nav-item" id="regNav">
+                        <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
+                            href="./pages/registro.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FIN DE NAVBAR -->
 
     <section>
         <div class="library_hero_container">
@@ -156,8 +157,9 @@
         </div>
         
     </div>
+ <!-- FIN CATEGORIAS -->
         <!-- MODAL DE LOGIN -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="modal">
           <div class="modal-dialog">
               <div class="modal-content">
                   <div class="modal-header bg-dark">
@@ -175,7 +177,7 @@
                               <input type="password" class="form-control" id="passLogin">
                               <a href="#">¿No recuerdas tu contraseña?</a>
                           </div>
-                          <button type="submit" class="btn btn-danger text-white">Ingresar</button>
+                          <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Ingresar</button>
                       </form>
                   </div>
                   <div class="modal-footer bg-dark">
@@ -196,6 +198,7 @@
 
 <script src="../js/games.js"></script>
 <script src="../js/gameDetails.js"></script>
+<script src="./js/login.js"></script>
 
 
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>

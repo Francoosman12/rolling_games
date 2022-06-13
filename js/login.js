@@ -31,20 +31,6 @@ function handleSubmit(e){
                 btnUser.innerHTML = optionUser;
                 listContainer.appendChild(btnUser);
 
-              //   let btnUser = document.createElement('li');
-              //   btnUser.classList = "nav-item dropdown";
-              //   let optionUser = `<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              //   hola ${validacion.nombre}
-              // </a>
-              // <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              //   <li><a class="dropdown-item" href="#">Action</a></li>
-              //   <li><a class="dropdown-item" href="#">Another action</a></li>
-              //   <li><hr class="dropdown-divider"></li>
-              //   <li><a class="dropdown-item" href="#">Something else here</a></li>
-              // </ul>`;
-              //   btnUser.innerHTML = optionUser;
-              //   listContainer.appendChild(btnUser);
-
                 if(validacion){
                     if(validacion.rol === "admin"){
                       let btnAdmin = document.createElement("li");

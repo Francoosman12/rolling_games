@@ -1,6 +1,6 @@
 //CATEGORIAS
 
-let usuario = JSON.parse(localStorage.getItem("usuarios")) || [];
+// let usuario = JSON.parse(localStorage.getItem("user")) || [];
 let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
 let generos = [
   "Action",
@@ -13,18 +13,17 @@ let generos = [
 let categoryContainer=document.getElementById("categoriesContainer")
 //Validacion de Login
 //Contenedor de el listado de items del nav
-let listContainer = document.getElementById("listaMenu");
-if(usuario){
-  if(usuario.rol === "admin"){
-    let item = document.createElement("li");
-    item.classList = "nav-item";
-    let opcion = `<a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#exampleModal"
-    href="#">Aministrar</a>`;
-    item.innerHTML = opcion;
-    listContainer.appendChild(item);
-  }
-}
-
+// if(usuario){
+//   if(usuario.rol === "admin"){
+//     let listContainer = document.getElementById("listaMenu");
+//     let item = document.createElement("li");
+//     item.classList = "nav-item";
+//     let opcion = `<a class="nav-link botones active"
+//     href="./pages/admin.html">Aministrar</a>`;
+//     item.innerHTML = opcion;
+//     listContainer.appendChild(item);
+//   }
+// }
 //Generar h1 y div por cada genero
 let cargarGames = () => {
   generos.forEach((genero, index) => {

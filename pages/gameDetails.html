@@ -54,7 +54,12 @@
         </div>
     </nav>
   </header>
-
+  <div id="popup" style="display:none">
+    <a id="popup-close" href="" class="button">Close</a>
+    <p>
+        <img id="image-placeholder" src="https://cdn.akamai.steamstatic.com/steam/apps/952060/ss_77eda710487b89293f109cf7dcf96b4ffab0d1a1.1920x1080.jpg?t=1644282235">
+    </p>
+</div>
     <section>
         <div class="library_hero_container">
             <div class="overlay"></div>
@@ -82,15 +87,15 @@
                         <video id="video1" controls autoplay muted src=""></video>
                       </div>
             
-                      <div class="carousel-item">
+                      <div class="carousel-item popup-open">
                         <img id="screenshot1" src="" alt="Hills">
                       </div>
             
-                      <div class="carousel-item">
+                      <div class="carousel-item popup-open">
                         <img id="screenshot2" src="" alt="Hills">
                       </div>
             
-                      <div class="carousel-item">
+                      <div class="carousel-item popup-open">
                         <img id="screenshot3" src="" alt="Hills">
                       </div>
                     </div>
@@ -130,6 +135,9 @@
                       </li>
                      </ol>
                   </div>
+
+                  
+
                 <!-- carousel -->
                   <div class="description_container">
                     <p class="description" id="description"></p>
@@ -191,6 +199,7 @@
 <script src="../js/games.js"></script>
 <script src="../js/gameDetails.js"></script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
 
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
@@ -212,5 +221,34 @@
       });
     </script> -->
 <!-- ///////////////////////////////////////////////////////// -->
+<style>
+  #popup {
+      border: 1px solid gray;
+      border-radius: 5px 5px 5px 5px;
+      float: left;
+      margin: auto;
+      width: 95vw;
+      position: absolute;
+      /* top: 200px; */
+      z-index: 9999;
+  }
+  #popup img{
+    width: 100%;
+  }
+  </style>
+<script type="text/javascript">
+  $(document).ready( function() {
+      $(".popup-open").click( function(e) {
+          $("#popup:visible").hide(); //hide popup if it is open
+          e.preventDefault(); // don't follow link
+          $("#image-placeholder").attr("src", $(this).attr("https://cdn.akamai.steamstatic.com/steam/apps/952060/ss_77eda710487b89293f109cf7dcf96b4ffab0d1a1.1920x1080.jpg?t=1644282235")); // replace image src with href from the link that was clicked
+          $("#popup").fadeIn("fast"); //show popup
+      });
+      $("#popup-close").click( function(e) {
+          e.preventDefault();
+          $("#popup").fadeOut("fast");
+      });
+  });
+</script>
 </body>
 </html>

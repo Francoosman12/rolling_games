@@ -28,7 +28,6 @@ if(usuario){
 //Generar h1 y div por cada genero
 let cargarGames = () => {
   generos.forEach((genero, index) => {
-    console.log(genero)
     let h1=document.createElement('h1')
     h1.setAttribute("class","title justify-content-between")
     let categoryContent=document.createElement('div')
@@ -65,7 +64,45 @@ let cargarGames = () => {
   });
 };
 
-cargarGames();
+//Generar Carousel
+function cargarCarrusel(){
+  let juegosDestacados=juegos.filter((juego)=>juego.featured==true)
+  console.log(juegosDestacados)
+  juegosDestacados.sort(function(b, a) { 
+    return a.id - b.id;
+  });
+  juegosDestacados.forEach((juego, index) => {
+    
+    let div=document.createElement('div')
+    div.setAttribute("class","carousel-item") 
+    div.innerHTML=`
+    <a class="game" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
+    <img src="${juego.logo}" class="carouselLogo" alt="" srcset="">
+    </a>
+    <a class="game" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
+    <img src="${juego.banner}" class="d-block w-100 carouselBanner" alt="${juego.title}" />
+    </a>  
+    <div class="carousel-caption d-none d-md-block" style=>
+       
+            <!-- <h1>Titulo</h1>                                                             -->
+            <p class="text-center">${juego.description}</p>
+            <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
+    </div>`
+    document.getElementsByClassName("carousel-inner")[0].appendChild(div)
+    document.getElementsByClassName("carousel-item")[0].setAttribute("class","carousel-item active")
+
+    let button=document.createElement('button')
+    button.setAttribute("type","button")
+    button.setAttribute("class","botonCarousel")
+    button.setAttribute("data-bs-target","#carouselExampleCaptions")
+    button.setAttribute("data-bs-slide-to",`${index}`)
+    button.setAttribute("aria-current","true")
+    button.setAttribute("aria-label",`Slide ${index+1}`)
+    document.getElementsByClassName("carousel-indicators")[0].appendChild(button)
+    document.getElementsByClassName("botonCarousel")[0].setAttribute("class","botonCarousel active")
+  
+  });
+}
 
 function mostrarDetalles(e) {
   window.location.href = `./pages/gameDetails.html?gameID=${juego.id}`;
@@ -75,3 +112,6 @@ function mostrarGenero(e) {
   console.log(e)
   window.location.href = `./pages/genre.html?genre=${generos[e]}`;
 }
+
+cargarCarrusel()
+cargarGames();

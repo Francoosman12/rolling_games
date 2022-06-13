@@ -14,11 +14,15 @@ body {
     font-size: 1.00rem;
 }
 
-td {
+/* td {
     line-height: 2.0rem;
-}
+} */
 
 .gameLink {
     color: white !important;
     text-decoration: none; /* no underline */
+}
+
+.asterisk{
+    color:#ff0000
 }

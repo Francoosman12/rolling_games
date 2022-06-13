@@ -25,9 +25,25 @@ body{
   padding: 10px;
   border-radius: 10px;
 }
-.imagen-carrusel{
+.carousel-item{
   height: 550px;
 }
+.carouselBanner{
+  height: 100%;
+  object-fit: cover;
+}
+.carouselLogo{
+  z-index: 2;
+  position: absolute;
+  object-fit: contain;
+  left: 25%;  
+  /* top: 0; */
+  /* left: 0; */
+  /* margin-left: 50px;   */
+  width: 50%;
+  height: 300px;
+}
+
 .container-descripcion .card-body {
   width: 20vw;
 }

@@ -1,15 +1,18 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+    
 
 footer {
-  background-color: rgb(25, 26, 25);
-    margin-top: 20px;
-    
-    height: 170px;
-    color: rgb(221, 223, 219)
-   ;
-   
-    
-    
+    background-color: rgb(25, 26, 25);
+    margin-top: 20px;    
+    font-family: "Baloo 2", cursive;
+	font-size: 16px;
+    color: rgb(221, 223, 219);       
+  }
+
+  .container-footer{
+    width: 100%;
+    height: 210px;
+    position: relative;
   }
   
   footer span {
@@ -25,9 +28,7 @@ footer {
 .footer-contact a{
 text-decoration: none;
 display: inline-block;
-background-color:rgb(184, 31, 31);
-padding: 5px;
-border-radius: 10px;
+
 
 
 }
@@ -41,13 +42,40 @@ border-radius: 10px;
     color:#b9b9b9;
   }
   .footer a:hover
-  {
-    color:#e93d12;
+  {    
+    color: white;
     text-decoration:none;
   }
+
+
+  .socials{
+    margin-top: 15px;
+
+  }
   .footer-links
-  {
+  { 
+    margin-top: 20px !important;   
     padding-left:0;
    
   }
- 
+  .copyright-text{   
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;    
+    margin: auto;
+  }
+
+ .botonFooter{
+  padding: 5px !important;
+  border: 2px solid white;
+  background-color:rgb(184, 31, 31);
+padding: 5px;
+border-radius: 10px;
+ }
+ .botonFooter a{
+  font-size: 20px;
+ }
+ .siguenos{
+  font-size: 25px;
+ }

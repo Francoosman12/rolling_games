@@ -1,6 +1,9 @@
 html {
-  margin: 1% 2%;
+  
   scroll-behavior: smooth;
+}
+main{
+  margin: 1% 2%;
 }
 body{
   background-image: url(../assets/img/imagen-fondo3.jpg);
@@ -16,6 +19,9 @@ body{
   display: flex;
   margin-top: 60px;
   width: 100%;
+}
+.container-header{
+  margin-top: 68px;
 }
 .title-carrusel{
   display: flex;
@@ -42,9 +48,6 @@ body{
   position: absolute;
   object-fit: contain;
   left: 25%;  
-  /* top: 0; */
-  /* left: 0; */
-  /* margin-left: 50px;   */
   width: 50%;
   height: 300px;
 }
@@ -85,10 +88,7 @@ body{
   height: 400px;
   margin: 10px 10px;
   align-items: center;
-  /* overflow-x: auto; */
-  /* overflow-y: visible; */
   justify-content: center;
-  /* scroll-behavior: smooth; */
 }
 
 
@@ -128,11 +128,6 @@ body{
 }
 
 .card img:hover {
-  /* opacity: 0.7; */
-  /* -webkit-transform:scale(1.05);
-            -moz-transform:scale(1.05);
-            -ms-transform:scale(1.05);
-            -o-transform:scale(1.05); */
   transform: scale(1.05);
   transition: 0.5s;
 }
@@ -141,6 +136,15 @@ body{
 
 /*Fin Tarjetas Juegos */
 
+.gamePoster{
+  display: none;
+}
+
+.carousel-caption{  
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 890px) {
   .imagen-carrusel{
@@ -149,8 +153,23 @@ body{
   .categorias{
     text-align: start;
   }
-  span{
-    display: none;
-  }  
 
+  .container-header{
+    height: calc(100vh - 65px) !important;
+    width: 100vw !important;
+  }
+  .container-carrusel{
+    height: calc(100vh - 65px) !important;
+    width: 100vw !important;
+    
+  }
+  .carousel-item{
+    height: calc(100vh - 65px) !important;
+    width: 100vw !important;
+  }
+
+  .carouselLogo{
+    width: 90% !important;
+    left: 5%;
+  }
 }

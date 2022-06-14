@@ -11,72 +11,69 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
   <title>Administration - RollinGames</title>
-
-  <link href="../css/admin.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/ico.ico"/>
+  <link rel="stylesheet" href="../css/style-footer.css">
   <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/ico.ico" />
 </head>
 
 <body>
 
   <header>
-  <!-- Navbar -->
-
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="foto-navbar"
-                  src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav" id="listaMenu">
-                  <li class="nav-item">
-                      <a class="nav-link botones active" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item" id="loginNav">
-                      <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal"
-                          href="#">Login</a>
-                  </li>
-                  <li class="nav-item" id="regNav">
-                      <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
-                          href="./pages/registro.html">Registro</a>
-                  </li>
-              </ul>
-          </div>
+        <a class="navbar-brand" href="../index.html"><img class="foto-navbar"
+            src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav" id="listaMenu">
+            <li class="nav-item">
+              <a class="nav-link botones active" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item" id="loginNav">
+              <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
+            </li>
+            <li class="nav-item" id="regNav">
+              <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
+                href="../pages/registro.html">Registro</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
 
-  <!-- FIN DE NAVBAR -->
+    <!-- FIN DE NAVBAR -->
   </header>
-
-  <div class="container">
-    <div class="d-flex bd-highlight mb-3">
-      <div class="me-auto mt-5 p-2 bd-highlight">
-        <h2>Administration
-      </div>
-      <div class="p-2 bd-highlight">
-        <button type="button" class="btn btn-secondary" onclick="createGameModal()">Create</button>
-        <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+  <main>
+    <div class="container admin">
+      <div class="d-flex bd-highlight mb-3">
+        <div class="me-auto mt-5 p-2 bd-highlight">
+          <h2>Administration
+        </div>
+        <div class="p-2 bd-highlight">
+          <button type="button" class="btn btn-secondary" onclick="createGameModal()">Create</button>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
           data-bs-target="#formCreate">Create</button> -->
-        <!-- <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#formCreate"
+          <!-- <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#formCreate"
                             href="#">Registro</a> -->
+        </div>
       </div>
-    </div>
 
-    <!-- MODAL REGISTRO -->
-    <div class="modal fade" id="formCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header bg-dark">
-            <h5 class="modal-title text-white" id="exampleModalLabel">Create a New Game</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body bg-dark">
+      <!-- MODAL REGISTRO -->
+      <div class="modal fade" id="formCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Create a New Game</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
               <form id="gameForm" onsubmit="createGame(event)">
-                
+
                 <div class="row">
                   <div class="col-lg-6 col-xl-6 col-xs-sm-12">
                     <div class="mb-3">
@@ -98,20 +95,22 @@
                         <option value="Sports">Sports</option>
                         <option value="Strategy">Strategy</option>                        
                         </select> -->
-                        <select name="field1" id="selectGenre" multiple onchange="setGenero(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true" required>                          
-                          <option value="Action">Action</option>
-                          <option value="Adventure">Adventure</option>
-                          <option value="Casual">Casual</option>
-                          <option value="Fighting">Fighting</option>
-                          <option value="FPS">FPS</option>
-                          <option value="Indie">Indie</option>
-                          <option value="Massively Multiplayer">Massively Multiplayer</option>
-                          <option value="RPG">RPG</option>
-                          <option value="Simulation">Simulation</option>
-                          <option value="Shooter">Shooter</option>
-                          <option value="Sports">Sports</option>
-                          <option value="Strategy">Strategy</option>
-                        </select>
+                      <select name="field1" id="selectGenre" multiple
+                        onchange="setGenero(Array.from(this.selectedOptions).map(x=>x.value??x.text))"
+                        multiselect-hide-x="true" required>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="FPS">FPS</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Massively Multiplayer">Massively Multiplayer</option>
+                        <option value="RPG">RPG</option>
+                        <option value="Simulation">Simulation</option>
+                        <option value="Shooter">Shooter</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Strategy">Strategy</option>
+                      </select>
                     </div>
                     <div class="mb-3">
                       <label for="gameDescription" class="form-label">Description</label>
@@ -122,7 +121,8 @@
                       <input type="text" class="form-control" id="gameDeveloper">
                     </div>
                     <div class="mb-3">
-                      <label for="gameReleaseDate" class="form-label"><span class="asterisk">* </span>Release Date</label>
+                      <label for="gameReleaseDate" class="form-label"><span class="asterisk">* </span>Release
+                        Date</label>
                       <input type="date" class="form-control" id="gameReleaseDate" required>
                     </div>
                     <div class="mb-3">
@@ -138,12 +138,12 @@
                       <label class="form-check-label text-white" for="exampleCheck2">Featured game</label>
                     </div>
                   </div>
-                  
+
                   <div class="col-lg-6 col-xl-6 col-xs-sm-12">
                     <div class="mb-3">
                       <label for="gameLinkPoster" class="form-label">Link Poster</label>
                       <input type="text" class="form-control" id="gameLinkPoster">
-                    </div>                    
+                    </div>
                     <div class="mb-3">
                       <label for="gameLinkBanner" class="form-label">Link Banner</label>
                       <input type="text" class="form-control" id="gameLinkBanner">
@@ -151,7 +151,7 @@
                     <div class="mb-3">
                       <label for="gameLogo" class="form-label">Link Logo</label>
                       <input type="text" class="form-control" id="gameLogo">
-                    </div>                    
+                    </div>
                     <div class="mb-3">
                       <label for="gameScreen1" class="form-label">Link Screenshot 1</label>
                       <input type="text" class="form-control" id="gameScreen1">
@@ -173,31 +173,31 @@
                       <input type="text" class="form-control" id="gameLinkIcon">
                     </div>
                   </div>
-                </div>                
-                <button type="submit" class="btn btn-primary" >Submit</button>              
-            </form>
-          </div>
-          <div class="modal-footer bg-dark">
-            <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- FIN MODAL REGISTRO -->
+      <!-- FIN MODAL REGISTRO -->
 
-    <!-- MODAL EDICION -->
+      <!-- MODAL EDICION -->
 
-    <div class="modal fade" id="formEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header bg-dark">
-            <h5 class="modal-title text-white" id="exampleModalLabel">Edit Game</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body bg-dark" id="modal-bodyEdit">
+      <div class="modal fade" id="formEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Edit Game</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark" id="modal-bodyEdit">
               <form id="gameFormEdit">
-                
+
                 <div class="row">
                   <div class="col-lg-6 col-xl-6 col-xs-sm-12">
                     <div class="mb-3">
@@ -220,7 +220,7 @@
                         <option value="Sports">Sports</option>
                         <option value="Strategy">Strategy</option>                        
                         </select> -->
-                        <!-- <select name="field1" id="selectGenre2" multiple onchange="setGenero(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true">                          
+                      <!-- <select name="field1" id="selectGenre2" multiple onchange="setGenero(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true">                          
                           <option value="Action">Action</option>
                           <option value="Adventure">Adventure</option>
                           <option value="Casual">Casual</option>
@@ -260,12 +260,12 @@
                       <label class="form-check-label text-white" for="exampleCheck2">Featured game</label>
                     </div>
                   </div>
-                  
+
                   <div class="col-lg-6 col-xl-6 col-xs-sm-12">
                     <div class="mb-3">
                       <label for="gameLinkPoster" class="form-label">Link Poster</label>
                       <input type="text" class="form-control" id="gameEditLinkPoster">
-                    </div>                    
+                    </div>
                     <div class="mb-3">
                       <label for="gameLinkBanner" class="form-label">Link Banner</label>
                       <input type="text" class="form-control" id="gameEditLinkBanner">
@@ -273,7 +273,7 @@
                     <div class="mb-3">
                       <label for="gameLogo" class="form-label">Link Logo</label>
                       <input type="text" class="form-control" id="gameEditLogo">
-                    </div>                    
+                    </div>
                     <div class="mb-3">
                       <label for="gameScreen1" class="form-label">Link Screenshot 1</label>
                       <input type="text" class="form-control" id="gameEditScreen1">
@@ -295,54 +295,176 @@
                       <input type="text" class="form-control" id="gameEditLinkIcon">
                     </div>
                   </div>
-                </div>                
-                <button type="submit" class="btn btn-primary" >Submit</button>              
-            </form>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
-          <div class="modal-footer bg-dark">
-            <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+
+      <!-- TABLA -->
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#ID</th>
+              <th scope="col"></th>
+              <th scope="col">Title</th>
+              <th scope="col" class="d-none d-md-table-cell">Release Date</th>
+              <th scope="col" class="d-none d-md-table-cell">Developer</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="mytable">
+            <tr>
+              <th scope="row" colspan="5">Loading...</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- contenido de footer -->
+
+  <footer class="footer">
+    <div class="container container-footer pt-3 ">
+      <div class="row mt-3">
+        <div class="col px-3 text-center footer-contact">
+          <button class="botonFooter">
+            <a href="../pages/sobreNosotros.html"><span>Conocenos</span></a>
+          </button>
+          <button class="botonFooter">
+            <a href="../pages/contacto.html"><span>Contacto</span></a>
+          </button>
+        </div>
+      </div>
+
+      <div class="row px-3 mt-2 footer-links">
+        <div class="col-4 col-md-12 text-center">
+          <span class="siguenos">SIGUENOS</span>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="copyright-text">
+            <p class=" text-center">Copyright &copy; 2022 All Rights Reserved by <b>RollingGames</b>.</p>
           </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- TABLA -->
-    <div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#ID</th>
-            <th scope="col"></th>
-            <th scope="col">Title</th>
-            <th scope="col" class="d-none d-md-table-cell">Release Date</th>
-            <th scope="col" class="d-none d-md-table-cell">Developer</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <tbody id="mytable">
-          <tr>
-            <th scope="row" colspan="5">Loading...</th>
-          </tr>
-        </tbody>
-      </table>
+  <!-- MODAL DE LOGIN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Iniciar sesion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <form id="form-login">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passLogin">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#recuCuenta">¿No recuerdas tu
+                contraseña?</a>
+            </div>
+            <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Ingresar</button>
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  
+  <!-- FIN MODAL DE LOGIN -->
+  <!-- MODAL DE RECUPERACION DE CUENTA -->
+  <div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body bg-dark">
+          <form id="form-recuCuenta">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <p class="text-white">Ingrese el correo con el que se registro en nuestra plataforma</p>
+              <input type="email" class="form-control" id="emailRecu" aria-describedby="emailHelp">
+            </div>
+            <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal"
+              onclick="recuperarCuenta()">Enviar</button>
+            <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Enviar</button>
+      <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- FIN MODAL DE RECUPERACION DE CUENTA -->
+  <!-- MODAL DE CERRAR SESION -->
+  <div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">¿Cerrar Sesion?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal" onclick="cerrarSesion()">Cerrar
+            Sesion</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+  <!-- FIN MODAL DE CERRAR SESION-->
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    
-    <script src="../js/multiselect-dropdown.js" ></script>
-    <script src="../js/games.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/multiselect-dropdown.js"></script>
+
+  <script src="../js/games.js"></script>
+
   <script src="../js/admin.js"></script>
-  
+  <script src="../js/login.js"></script>
+
+
 </body>
 
 </html>

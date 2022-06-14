@@ -17,6 +17,9 @@ body{
   margin-top: 60px;
   width: 100%;
 }
+.container-header{
+  margin-top: 68px;
+}
 .title-carrusel{
   display: flex;
   color: white;
@@ -141,6 +144,15 @@ body{
 
 /*Fin Tarjetas Juegos */
 
+.gamePoster{
+  display: none;
+}
+
+.carousel-caption{  
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 890px) {
   .imagen-carrusel{
@@ -153,4 +165,33 @@ body{
     display: none;
   }  
 
+  .container-header{
+    height: calc(100vh - 65px) !important;
+    width: 100vw !important;
+  }
+  .container-carrusel{
+    height: calc(100vh - 65px) !important;
+    width: 100vw !important;
+    
+  }
+  .carousel-item{
+    height: calc(100vh - 65px) !important;
+    width: 100vw !important;
+  }
+
+  .carouselLogo{
+    width: 90% !important;
+    left: 5%;
+  }
+
+  /* .gamePoster{
+    display: block;
+    height: calc(100vh - 65px) !important;
+  }
+  .gameLogo{
+    display: none;
+  }
+  .gameBanner{
+    display: none;
+  } */
 }

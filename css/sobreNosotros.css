@@ -13,7 +13,8 @@ body {
 .dark {
 	background: rgba(rgb(15, 15, 15), rgb(183, 192, 183), rgb(55, 55, 58),);
     margin: 50px;
-	height: 700px;    
+	height: 400px;
+	margin-top: 10%;    
 }
 
 

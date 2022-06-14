@@ -1,4 +1,4 @@
-let usuario = JSON.parse(localStorage.getItem("usuarios"));
+let usuario = JSON.parse(localStorage.getItem("usuarios")) || [];
 let logUser = JSON.parse(localStorage.getItem("userLogin"));
 
 function handleSubmit(e) {
@@ -21,31 +21,7 @@ function handleSubmit(e) {
     alert("El correo o password son incorrectos");
   }
 }
-if (logUser) {
-  let listContainer = document.getElementById("listaMenu");
-  //reemplazar
-  let login = document.getElementById("loginNav");
-  let registro = document.getElementById("regNav");
-  login.style.display = "none";
-  registro.style.display = "none";
-  // Opciones de Usuario
-  let btnUser = document.createElement("li");
-  btnUser.classList = "nav-item";
-  let optionUser = `<a class="nav-link botones active" href="#" data-bs-toggle="modal" data-bs-target="#cerrarSesion">Hola ${logUser.nombre}</a>`;
-  btnUser.innerHTML = optionUser;
-  listContainer.appendChild(btnUser);
 
-  // if(logUser){
-  if (logUser.rol === "admin") {
-    let btnAdmin = document.createElement("li");
-    btnAdmin.classList = "nav-item";
-    let opcionAdmin = `<a class="nav-link botones active"
-     href="./pages/admin.html">Aministrar</a>`;
-    btnAdmin.innerHTML = opcionAdmin;
-    listContainer.appendChild(btnAdmin);
-  }
-  // }
-}
 function cerrarSesion() {
   localStorage.removeItem("userLogin");
   location.replace("../index.html");
@@ -63,3 +39,33 @@ function cerrarSesion() {
 //   }
 // }
 document.getElementById("form-login").addEventListener("submit", handleSubmit);
+
+function modificarNav() {
+  if (logUser) {
+    let listContainer = document.getElementById("listaMenu");
+    //reemplazar
+    let login = document.getElementById("loginNav");
+    let registro = document.getElementById("regNav");
+    login.style.display = "none";
+    registro.style.display = "none";
+    // Opciones de Usuario
+    let btnUser = document.createElement("li");
+    btnUser.classList = "nav-item";
+    let optionUser = `<a class="nav-link botones active" href="#" data-bs-toggle="modal" data-bs-target="#cerrarSesion">Hola ${logUser.nombre}</a>`;
+    btnUser.innerHTML = optionUser;
+    listContainer.appendChild(btnUser);
+
+    // if(logUser){
+    if (logUser.rol === "admin") {
+      let btnAdmin = document.createElement("li");
+      btnAdmin.classList = "nav-item";
+      let opcionAdmin = `<a class="nav-link botones active"
+       href="./pages/admin.html">Aministrar</a>`;
+      btnAdmin.innerHTML = opcionAdmin;
+      listContainer.appendChild(btnAdmin);
+    }
+    // }
+  }
+}
+
+modificarNav();

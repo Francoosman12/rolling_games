@@ -23,6 +23,10 @@ body {
     text-decoration: none; /* no underline */
 }
 
+.admin{
+    margin-top: 60px;
+}
+
 .asterisk{
     color:#ff0000
 }

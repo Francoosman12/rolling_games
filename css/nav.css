@@ -1,6 +1,9 @@
-html {
-  margin: 1% 8%;
+html {  
   scroll-behavior: smooth;
+}
+
+main{
+  margin: 1% 8%;
 }
 
 nav {

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/sobreNosotros.css" />
   <link rel="stylesheet" href="../css/nav.css" />
   <link rel="stylesheet" href="../css/style-footer.css">
-  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="../css/index.css" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="foto-navbar"
+        <a class="navbar-brand" href="../index.html"><img class="foto-navbar"
             src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,20 +33,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav" id="listaMenu">
             <li class="nav-item">
-              <a class="nav-link botones active" href="/index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link botones active" href="/pages/sobreNosotros.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link botones active" href="/pages/contacto.html">Contacto</a>
-            </li>
+              <a class="nav-link botones active" href="../index.html">Inicio</a>
+            </li>            
             <li class="nav-item" id="loginNav">
               <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
             </li>
             <li class="nav-item" id="regNav">
               <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
-                href="/pages/registro.html">Registro</a>
+                href="../pages/registro.html">Registro</a>
             </li>
           </ul>
         </div>
@@ -59,45 +53,46 @@
   <!-- contenido del body -->
 
 
-  <section class="dark">
-    <div class="container py-4">
-      <h1 class="h1 text-center" id="pageHeaderTitle">Conócenos</h1>
-
-      <article class="postcard">
-        <img class="postcard__img" src="../assets/img/avatares.jpeg" alt="Image Title" />
-        </a>
-        <div class="postcard__text">
-          <h1 class="postcard__title text-center">Rolling Team</h1>
-
-
-          <div class="postcard__preview-txt">
-            Somos Juan Lara, Franco Osman, Matias Barahona, Nicolas Martinez Pastur y Laura Ortiz. Conformamos el equipo
-            de desarrollo de esta pagina como nuestro primer proyecto. Utilizamos HTML, CSS, BOOTSTRAP Y JAVASCRIPT en
-            todo el contenido. Un gusto presentarnos y a seguir creciendo!
+    <section class="dark">
+      <div class="container py-4">
+        <h1 class="h1 text-center" id="pageHeaderTitle">Conócenos</h1>
+  
+        <article class="postcard">
+          <img class="postcard__img" src="../assets/img/avatares.jpeg" alt="Image Title" />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title text-center">Rolling Team</h1>
+  
+  
+            <div class="postcard__preview-txt">
+              Somos Juan Lara, Franco Osman, Matias Barahona, Nicolas Martinez Pastur y Laura Ortiz. Conformamos el equipo
+              de desarrollo de esta pagina como nuestro primer proyecto. Utilizamos HTML, CSS, BOOTSTRAP Y JAVASCRIPT en
+              todo el contenido. Un gusto presentarnos y a seguir creciendo!
+            </div>
           </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- contenido de footer -->
-
-  <footer class="footer">
-
-    <div class="container pt-3">
-      <div class="col px-3 text-center footer-contact">
-        <a href="">
-          <div class="row"><span>CONOCENOS</span></div>
-        </a>
-        <a href="">
-          <div class="row"><span>CONTACTO</span></div>
-        </a>
+        </article>
       </div>
-      <div class="row px-3 mt-2 footer-links">
-        <div class="col-4 col-md-12 text-center mb-3">
-          <span>SIGUENOS</span>
+    </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container container-footer pt-3 ">
+      <div class="row mt-3">
+        <div class="col px-3 text-center footer-contact">
+          <button class="botonFooter">
+            <a href="../pages/sobreNosotros.html">Conocenos</a>
+          </button>
+          <button class="botonFooter">
+            <a href="../pages/contacto.html">Contacto</a>
+          </button>
         </div>
-        <div class="col text-center mb-1">
+      </div>  
+      <div class="row px-3 mt-2 footer-links">
+        <div class="col-4 col-md-12 text-center">
+          <span class="siguenos">SIGUENOS</span>
+        </div>
+        <div class="col text-center">
           <a href=""><span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span></a>
         </div>
         <div class="col text-center">
@@ -110,16 +105,18 @@
           <a href=""><span><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span></a>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <div class="copyright-text">
+            <p class=" text-center">Copyright &copy; 2022 All Rights Reserved by <b>RollingGames</b>.</p>
+          </div>
+        </div>
+      </div>  
+    </div>
   </footer>
-  <!-- FIN CATEGORIAS -->
+  
   <!-- MODAL DE LOGIN -->
-  <div class="col-md-8 col-sm-6 col-xs-12">
-    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-      <b>Rolling Games</b>.
-    </p>
-  </div>
-  </div>
-  </footer>
+
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
     id="modal">
     <div class="modal-dialog">

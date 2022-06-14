@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rolling Games</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style-footer.css">
-  <link rel="stylesheet" href="../css/404.css">
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/dfb7276bfd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/sobreNosotros.css" />
   <link rel="stylesheet" href="../css/nav.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/ico.ico" />
-  <title>Error 404 - Rolling Games</title>
+  <link rel="stylesheet" href="../css/style-footer.css">
+  <link rel="stylesheet" href="../css/index.css" />
 </head>
 
 <body>
@@ -46,51 +49,31 @@
 
     <!-- FIN DE NAVBAR -->
   </header>
-  <div class="container d-flex align-items-center justify-content-center">
-    <div class="row text-center">
-      <div class="col-12 text-danger mt-2">
-        <h1 class="fw-bold">ERROR 404</h1>
-      </div>
-      <div class="col-12 mt-2"><img src="../assets/error404.png" alt="Error"></div>
-      <div class="col-12 mt-2">
-        <h2>Sorry, this page was not found!</h2>
-      </div>
-      <div class="col-12 mt-2">
-        <button type="button" class="btn btn-danger" href="../index.html">Volver</button>
-      </div>
-    </div>
-  </div>
-  
-  <!-- MODAL DE LOGIN -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-dark">
-          <h5 class="modal-title text-white" id="exampleModalLabel">Iniciar sesion</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body bg-dark">
-          <form id="form-login">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Correo</label>
-              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="passLogin">
-              <a href="#">¿No recuerdas tu contraseña?</a>
-            </div>
-            <button type="submit" class="btn btn-danger text-white">Ingresar</button>
-          </form>
-        </div>
-        <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- FIN MODAL DE LOGIN -->
+  <!-- contenido del body -->
+
+
+    <section class="dark">
+      <div class="container py-4">
+        <h1 class="h1 text-center" id="pageHeaderTitle">Conócenos</h1>
+  
+        <article class="postcard">
+          <img class="postcard__img" src="../assets/img/avatares.jpeg" alt="Image Title" />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title text-center">Rolling Team</h1>
+  
+  
+            <div class="postcard__preview-txt">
+              Somos Juan Lara, Franco Osman, Matias Barahona, Nicolas Martinez Pastur y Laura Ortiz. Conformamos el equipo
+              de desarrollo de esta pagina como nuestro primer proyecto. Utilizamos HTML, CSS, BOOTSTRAP Y JAVASCRIPT en
+              todo el contenido. Un gusto presentarnos y a seguir creciendo!
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  
 
   <!-- Footer -->
   <footer class="footer">
@@ -131,10 +114,40 @@
       </div>  
     </div>
   </footer>
+  
+  <!-- MODAL DE LOGIN -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Iniciar sesion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <form id="form-login">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passLogin">
+              <a href="#">¿No recuerdas tu contraseña?</a>
+            </div>
+            <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Ingresar</button>
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIN MODAL DE LOGIN -->
+  <script src="./js/login.js"></script>
 </body>
 
 </html>

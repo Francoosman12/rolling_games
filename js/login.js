@@ -1,22 +1,52 @@
-let usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
+let usuario = JSON.parse(localStorage.getItem("usuarios"));
 function handleSubmit(e){
-    e.preventDefault()
-    let emailLogin = document.getElementById('emailLogin').value 
-    let pass = document.getElementById('passLogin').value
-
-    let validacion = usuarios.find((user)=>{
-      return user.email === emailLogin  
+    e.preventDefault();
+    let emailLogin = document.querySelector('#emailLogin').value;
+    let pass = document.querySelector('#passLogin').value;
+    //buscamos el correo del usuario
+    let validacion = usuario.find((user)=>{
+      return user.email === emailLogin ;
     })
     if (validacion){
             if(validacion.password === pass){
                 //guardamos la sesion del usuario
-                localStorage.setItem('user',JSON.stringify(validacion))
-                location.replace('./index.html');
+                localStorage.setItem('userLogin',JSON.stringify(validacion));
+                
+                let listContainer = document.getElementById('listaMenu');
+                //reemplazar
+                let login = document.getElementById('loginNav');
+                let registro = document.getElementById('regNav');
+                login.style.display = 'none';
+                registro.style.display = 'none';
+                // console.log(login);
+                // console.log(registro);
+                // document.ul.removeChild(login);
+                // document.ul.removeChild(registro);
+                
+                // Opciones de Usuario
+                let btnUser = document.createElement('li');
+                btnUser.classList = "nav-item";
+                let optionUser = `<a class="nav-link botones active"
+                href="#" data-bs-toggle="modal" data-bs-target="#cerrarSesion">Hola ${validacion.nombre}</a>`;
+                btnUser.innerHTML = optionUser;
+                listContainer.appendChild(btnUser);
+
+                if(validacion){
+                    if(validacion.rol === "admin"){
+                      let btnAdmin = document.createElement("li");
+                      btnAdmin.classList = "nav-item";
+                      let opcionAdmin = `<a class="nav-link botones active"
+                      href="./pages/admin.html">Aministrar</a>`;
+                      btnAdmin.innerHTML = opcionAdmin;
+                      listContainer.appendChild(btnAdmin);
+                    }
+                  }
+                  
             }else{
-                alert('El correo o password son incorrectos')
+                alert('El correo o password son incorrectos');
             }
         }else{
-            alert('El correo o password son incorrectos')
+            alert('El correo o password son incorrectos');
         }
 }
 

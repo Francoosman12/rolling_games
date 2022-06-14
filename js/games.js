@@ -1059,6 +1059,10 @@ let listaJuegos = [
 
 ];
 
+const inicializarJuegos=function(){
 if (JSON.parse(localStorage.getItem("juegos")) == null) {
   localStorage.setItem("juegos", JSON.stringify(listaJuegos));
 }
+}
+
+inicializarJuegos()

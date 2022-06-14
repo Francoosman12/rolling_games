@@ -48,9 +48,6 @@ body{
   position: absolute;
   object-fit: contain;
   left: 25%;  
-  /* top: 0; */
-  /* left: 0; */
-  /* margin-left: 50px;   */
   width: 50%;
   height: 300px;
 }
@@ -91,10 +88,7 @@ body{
   height: 400px;
   margin: 10px 10px;
   align-items: center;
-  /* overflow-x: auto; */
-  /* overflow-y: visible; */
   justify-content: center;
-  /* scroll-behavior: smooth; */
 }
 
 
@@ -134,11 +128,6 @@ body{
 }
 
 .card img:hover {
-  /* opacity: 0.7; */
-  /* -webkit-transform:scale(1.05);
-            -moz-transform:scale(1.05);
-            -ms-transform:scale(1.05);
-            -o-transform:scale(1.05); */
   transform: scale(1.05);
   transition: 0.5s;
 }
@@ -164,9 +153,6 @@ body{
   .categorias{
     text-align: start;
   }
-  span{
-    display: none;
-  }  
 
   .container-header{
     height: calc(100vh - 65px) !important;
@@ -186,15 +172,4 @@ body{
     width: 90% !important;
     left: 5%;
   }
-
-  /* .gamePoster{
-    display: block;
-    height: calc(100vh - 65px) !important;
-  }
-  .gameLogo{
-    display: none;
-  }
-  .gameBanner{
-    display: none;
-  } */
 }

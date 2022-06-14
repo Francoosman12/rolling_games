@@ -60,7 +60,7 @@ function modificarNav() {
       let btnAdmin = document.createElement("li");
       btnAdmin.classList = "nav-item";
       let opcionAdmin = `<a class="nav-link botones active"
-       href="./pages/admin.html">Aministrar</a>`;
+       href="./pages/admin.html">Admin</a>`;
       btnAdmin.innerHTML = opcionAdmin;
       listContainer.appendChild(btnAdmin);
     }

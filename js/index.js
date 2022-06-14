@@ -76,18 +76,25 @@ function cargarCarrusel(){
     let div=document.createElement('div')
     div.setAttribute("class","carousel-item") 
     div.innerHTML=`
-    <a class="game" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
+    <a class="game gamePoster" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
+    <img src="${juego.poster}" class="d-block w-100 carouselBanner" alt="${juego.title}" />
+    </a>
+    <a class="game gameLogo" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
     <img src="${juego.logo}" class="carouselLogo" alt="" srcset="">
     </a>
-    <a class="game" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
+    <a class="game gameBanner" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">
     <img src="${juego.banner}" class="d-block w-100 carouselBanner" alt="${juego.title}" />
     </a>  
-    <div class="carousel-caption d-none d-md-block" style=>
+    
+    <div class="carousel-caption">
        
-            <!-- <h1>Titulo</h1>                                                             -->
-            <p class="text-center">${juego.description}</p>
-            <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
+      <!-- <h1>Titulo</h1>-->
+      <p class="text-center">${juego.description}</p>
+      <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
     </div>`
+    // <div class="d-block d-md-none">
+    // <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
+    // </div>`
     document.getElementsByClassName("carousel-inner")[0].appendChild(div)
     document.getElementsByClassName("carousel-item")[0].setAttribute("class","carousel-item active")
 

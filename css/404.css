@@ -4,4 +4,10 @@
 } */
 .container404{
     height: 100vh;
+    background-color: white;
+}
+.container404 img{
+    width: 100%;
+    filter: grayscale(0.5);
+    size: cover;
 }

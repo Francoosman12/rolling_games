@@ -1,25 +1,67 @@
+let logUser2 = JSON.parse(localStorage.getItem("userLogin")) || [];
+const validarUsuario = () => {
+  if (logUser2.rol !== "admin") {
+    document.querySelector("main").innerHTML = "";
+
+    let div = document.createElement("div");
+    div.classList = "container";
+    let estructura = `<div class="row mt-5">
+    <div class="col">
+      <div class="alert alert-danger" role="alert">
+        No tiene permisos para ver esta página
+      </div>
+      <div>
+      <a href="../index.html">Volver</a>
+      </div>
+    </div>
+  </div>`;
+    div.innerHTML = estructura;
+    document.querySelector("main").appendChild(div);
+  } else {
+    cargarTabla();
+  }
+};
+
 let juegos = JSON.parse(localStorage.getItem("juegos")) || [];
 
 //Definir clase Juego
 class Juego {
-  constructor(id,title,genre,description=null,developer=null,release_date,poster,banner,logo,screenshot1,screenshot2,screenshot3,video,icon,price=0,published=false,featured=false){
-      this.id=id
-      this.title=title
-      this.genre=genre
-      this.description=description
-      this.developer=developer
-      this.release_date=release_date
-      this.poster=poster
-      this.banner=banner
-      this.logo=logo
-      this.screenshot1=screenshot1
-      this.screenshot2=screenshot2
-      this.screenshot3=screenshot3
-      this.video=video
-      this.icon=icon
-      this.price=price
-      this.published=published
-      this.featured=featured
+  constructor(
+    id,
+    title,
+    genre,
+    description = null,
+    developer = null,
+    release_date,
+    poster,
+    banner,
+    logo,
+    screenshot1,
+    screenshot2,
+    screenshot3,
+    video,
+    icon,
+    price = 0,
+    published = false,
+    featured = false
+  ) {
+    this.id = id;
+    this.title = title;
+    this.genre = genre;
+    this.description = description;
+    this.developer = developer;
+    this.release_date = release_date;
+    this.poster = poster;
+    this.banner = banner;
+    this.logo = logo;
+    this.screenshot1 = screenshot1;
+    this.screenshot2 = screenshot2;
+    this.screenshot3 = screenshot3;
+    this.video = video;
+    this.icon = icon;
+    this.price = price;
+    this.published = published;
+    this.featured = featured;
   }
 }
 
@@ -45,105 +87,159 @@ const cargarTabla = () => {
 let myModalCreate = new bootstrap.Modal(document.getElementById("formCreate"));
 let myModalEdit = new bootstrap.Modal(document.getElementById("formEdit"));
 
-
 //Crear nuevo Juego - Mostar Modal
-function createGameModal(){
+function createGameModal() {
   myModalCreate.show();
 }
 
 //Crear nuevo Juego - Submit
-function createGame(e){
-  e.preventDefault()
-  let id= juegos[juegos.length-1].id+1
-  let title = document.getElementById("gameTitle").value
+function createGame(e) {
+  e.preventDefault();
+  let id = juegos[juegos.length - 1].id + 1;
+  let title = document.getElementById("gameTitle").value;
   // console.log(generosSelect)
-  let genre = generosSelect
+  let genre = generosSelect;
   // console.log(genre)
-  let description = document.getElementById("gameDescription").value
-  let developer = document.getElementById("gameDeveloper").value  
-  let release_date = document.getElementById("gameReleaseDate").value
+  let description = document.getElementById("gameDescription").value;
+  let developer = document.getElementById("gameDeveloper").value;
+  let release_date = document.getElementById("gameReleaseDate").value;
 
-  let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  let monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
   let t = new Date(release_date);
-  release_date = `${t.getDate()} ${monthNames[t.getMonth()]}, ${t.getFullYear()}`;
+  release_date = `${t.getDate()} ${
+    monthNames[t.getMonth()]
+  }, ${t.getFullYear()}`;
 
-  let poster = document.getElementById("gameLinkPoster").value
-  let banner = document.getElementById("gameLinkBanner").value
-  let logo = document.getElementById("gameLogo").value
-  let screenshot1 = document.getElementById("gameScreen1").value
-  let screenshot2 = document.getElementById("gameScreen2").value
-  let screenshot3 = document.getElementById("gameScreen3").value
-  let video = document.getElementById("gameLinkVideo").value
-  let icon = document.getElementById("gameLinkIcon").value
-  let price = document.getElementById("gamePrice").value
-  let published = document.getElementById("published").checked
-  let featured = document.getElementById("featured").checked
+  let poster = document.getElementById("gameLinkPoster").value;
+  let banner = document.getElementById("gameLinkBanner").value;
+  let logo = document.getElementById("gameLogo").value;
+  let screenshot1 = document.getElementById("gameScreen1").value;
+  let screenshot2 = document.getElementById("gameScreen2").value;
+  let screenshot3 = document.getElementById("gameScreen3").value;
+  let video = document.getElementById("gameLinkVideo").value;
+  let icon = document.getElementById("gameLinkIcon").value;
+  let price = document.getElementById("gamePrice").value;
+  let published = document.getElementById("published").checked;
+  let featured = document.getElementById("featured").checked;
 
-  juegos.push(new Juego(id,title,genre,description,developer,release_date,poster,banner,logo,screenshot1,screenshot2,screenshot3,video,icon,price,published,featured)) 
-  localStorage.setItem("juegos", JSON.stringify(juegos))
-  document.getElementById('gameForm').reset()
+  juegos.push(
+    new Juego(
+      id,
+      title,
+      genre,
+      description,
+      developer,
+      release_date,
+      poster,
+      banner,
+      logo,
+      screenshot1,
+      screenshot2,
+      screenshot3,
+      video,
+      icon,
+      price,
+      published,
+      featured
+    )
+  );
+  localStorage.setItem("juegos", JSON.stringify(juegos));
+  document.getElementById("gameForm").reset();
   myModalCreate.hide();
-  alert(`Game ${title} has been created sucessfully!`)
-  cargarTabla()  
+  alert(`Game ${title} has been created sucessfully!`);
+  cargarTabla();
 }
-
-
 
 //Editar Juego - Mostrar Modal
 
-function editGame(index){  
+function editGame(index) {
   myModalEdit.show();
   cargarDatosModal(index);
 }
 
 //Editar Juego - Cargar Tabla
 
-function cargarDatosModal(index){
-  document.getElementById("gameFormEdit").setAttribute("onSubmit",`actualizarJuego(event,${index})`)
-  document.getElementById("gameEditTitle").value=juegos[index].title
-  document.getElementById("gameEditGenre").value=juegos[index].genre.join(', ')
-  document.getElementById("gameEditDescription").value=juegos[index].description
-  document.getElementById("gameEditDeveloper").value=juegos[index].developer
-  let releaseDate = new Date(juegos[index].release_date).toISOString().split('T')[0]
-  document.getElementById("gameEditReleaseDate").value=releaseDate
-  document.getElementById("gameEditPrice").value=juegos[index].price||59.99
-  document.getElementById("gameEditLinkPoster").value=juegos[index].poster
-  document.getElementById("gameEditLinkBanner").value=juegos[index].banner
-  document.getElementById("gameEditLogo").value=juegos[index].logo
-  document.getElementById("gameEditScreen1").value=juegos[index].screenshot1
-  document.getElementById("gameEditScreen2").value=juegos[index].screenshot2
-  document.getElementById("gameEditScreen3").value=juegos[index].screenshot3
-  document.getElementById("gameEditLinkVideo").value=juegos[index].video
-  document.getElementById("gameEditLinkIcon").value=juegos[index].icon
-  document.getElementById("editPublished").checked = juegos[index].published||false
-  document.getElementById("editFeatured").checked = juegos[index].featured||false
+function cargarDatosModal(index) {
+  document
+    .getElementById("gameFormEdit")
+    .setAttribute("onSubmit", `actualizarJuego(event,${index})`);
+  document.getElementById("gameEditTitle").value = juegos[index].title;
+  document.getElementById("gameEditGenre").value =
+    juegos[index].genre.join(", ");
+  document.getElementById("gameEditDescription").value =
+    juegos[index].description;
+  document.getElementById("gameEditDeveloper").value = juegos[index].developer;
+  let releaseDate = new Date(juegos[index].release_date)
+    .toISOString()
+    .split("T")[0];
+  document.getElementById("gameEditReleaseDate").value = releaseDate;
+  document.getElementById("gameEditPrice").value = juegos[index].price || 59.99;
+  document.getElementById("gameEditLinkPoster").value = juegos[index].poster;
+  document.getElementById("gameEditLinkBanner").value = juegos[index].banner;
+  document.getElementById("gameEditLogo").value = juegos[index].logo;
+  document.getElementById("gameEditScreen1").value = juegos[index].screenshot1;
+  document.getElementById("gameEditScreen2").value = juegos[index].screenshot2;
+  document.getElementById("gameEditScreen3").value = juegos[index].screenshot3;
+  document.getElementById("gameEditLinkVideo").value = juegos[index].video;
+  document.getElementById("gameEditLinkIcon").value = juegos[index].icon;
+  document.getElementById("editPublished").checked =
+    juegos[index].published || false;
+  document.getElementById("editFeatured").checked =
+    juegos[index].featured || false;
 }
-
 
 //Actualizar el juego--------------------------------
 const actualizarJuego = function (e, index) {
   e.preventDefault();
   //tenemos que obtener todos los datos del formulario
-  let id = juegos[index].id
-  let title = document.getElementById("gameEditTitle").value
-  let genre = document.getElementById("gameEditGenre").value.split(', ');
-  let description = document.getElementById("gameEditDescription").value
-  let developer = document.getElementById("gameEditDeveloper").value
-  let release_date = document.getElementById("gameEditReleaseDate").value
-  let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  let id = juegos[index].id;
+  let title = document.getElementById("gameEditTitle").value;
+  let genre = document.getElementById("gameEditGenre").value.split(", ");
+  let description = document.getElementById("gameEditDescription").value;
+  let developer = document.getElementById("gameEditDeveloper").value;
+  let release_date = document.getElementById("gameEditReleaseDate").value;
+  let monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
   let t = new Date(release_date);
-  release_date = `${t.getDate()} ${monthNames[t.getMonth()]}, ${t.getFullYear()}`;
-  let poster = document.getElementById("gameEditLinkPoster").value
-  let banner = document.getElementById("gameEditLinkBanner").value
-  let logo = document.getElementById("gameEditLogo").value
-  let screenshot1 = document.getElementById("gameEditScreen1").value
-  let screenshot2 = document.getElementById("gameEditScreen2").value
-  let screenshot3 = document.getElementById("gameEditScreen3").value
-  let video = document.getElementById("gameEditLinkVideo").value
-  let icon = document.getElementById("gameEditLinkIcon").value
-  let price = document.getElementById("gameEditPrice").value
-  let published = document.getElementById("editPublished").checked
-  let featured = document.getElementById("editFeatured").checked
+  release_date = `${t.getDate()} ${
+    monthNames[t.getMonth()]
+  }, ${t.getFullYear()}`;
+  let poster = document.getElementById("gameEditLinkPoster").value;
+  let banner = document.getElementById("gameEditLinkBanner").value;
+  let logo = document.getElementById("gameEditLogo").value;
+  let screenshot1 = document.getElementById("gameEditScreen1").value;
+  let screenshot2 = document.getElementById("gameEditScreen2").value;
+  let screenshot3 = document.getElementById("gameEditScreen3").value;
+  let video = document.getElementById("gameEditLinkVideo").value;
+  let icon = document.getElementById("gameEditLinkIcon").value;
+  let price = document.getElementById("gameEditPrice").value;
+  let published = document.getElementById("editPublished").checked;
+  let featured = document.getElementById("editFeatured").checked;
 
   const newData = {
     id,
@@ -162,7 +258,7 @@ const actualizarJuego = function (e, index) {
     icon,
     price,
     published,
-    featured
+    featured,
   };
 
   juegos.splice(index, 1, newData);
@@ -181,20 +277,21 @@ const deleteGame = (index) => {
   if (validar) {
     alert(`${juegos[index].title} has been deleted`);
     juegos.splice(index, 1);
-    localStorage.setItem("juegos", JSON.stringify(juegos));    
+    localStorage.setItem("juegos", JSON.stringify(juegos));
     cargarTabla();
   }
 };
 
+// cargarTabla();
 
-cargarTabla();
-
-function mostrarDetalles(e){
+function mostrarDetalles(e) {
   location.replace = `../pages/gameDetails.html?gameID=${juego.id}`;
 }
 
-let generosSelect = []
-function setGenero(e){
+let generosSelect = [];
+function setGenero(e) {
   // console.log(e)
-  generosSelect=e
+  generosSelect = e;
 }
+
+validarUsuario();

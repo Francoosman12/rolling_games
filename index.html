@@ -162,6 +162,7 @@
     </div>
 
     <!-- FIN MODAL DE LOGIN -->
+<<<<<<< HEAD
     <!-- MODAL DE RECUPERACION DE CUENTA -->
     <div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -175,6 +176,23 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Correo</label>
                             <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+=======
+        <!-- MODAL DE RECUPERACION DE CUENTA -->
+                <div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body bg-dark">
+                                <form id="form-recuCuenta">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Correo</label>
+                                        <p class="text-white">Ingrese el correo con el que se registro en nuestra plataforma</p>
+                                        <input type="email" class="form-control" id="emailRecu" aria-describedby="emailHelp">
+                                    </div>
+                                    <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal" onclick="recuperarCuenta()">Enviar</button>
+                                    <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+                                </form>
+                            </div>
+>>>>>>> fc600777b6d2dcf8cf0b105db75caaa0a281a0b8
                         </div>
                         <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Enviar</button>
                         <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
@@ -185,6 +203,7 @@
     </div>
 
     <!-- FIN MODAL DE RECUPERACION DE CUENTA -->
+<<<<<<< HEAD
     <!-- MODAL DE CERRAR SESION -->
     <div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -197,6 +216,21 @@
                     <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar Sesion</button>
                     </form>
+=======
+        <!-- MODAL DE CERRAR SESION -->
+        <div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">¿Cerrar Sesion?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                            <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal" onclick="cerrarSesion()">Cerrar Sesion</button>
+                        </form>
+                    </div>
+>>>>>>> fc600777b6d2dcf8cf0b105db75caaa0a281a0b8
                 </div>
             </div>
         </div>

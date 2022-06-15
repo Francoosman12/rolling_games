@@ -39,6 +39,9 @@ nav {
   background: red; /* color de fondo hover */
   border-radius: 5%;
 }
+.searchBox{
+  margin-right: 50px;
+}
 
 /* FIN DE NAVBAR */
 

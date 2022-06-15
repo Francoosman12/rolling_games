@@ -121,37 +121,85 @@
   </footer>
 
   <!-- MODAL DE LOGIN -->
-
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    id="modal">
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-dark">
-          <h5 class="modal-title text-white" id="exampleModalLabel">Iniciar sesion</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body bg-dark">
-          <form id="form-login">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Correo</label>
-              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white" id="exampleModalLabel">Sign In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="passLogin">
-              <a href="#">¿No recuerdas tu contraseña?</a>
+            <div class="modal-body bg-dark">
+                <form id="form-login">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="passLogin">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#recuCuenta">Forgot your password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-danger text-white"
+                        data-bs-dismiss="modal">Sign In</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Ingresar</button>
-          </form>
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- FIN MODAL DE LOGIN -->
+<!-- FIN MODAL DE LOGIN -->
+<!-- MODAL DE RECUPERACION DE CUENTA -->
+<div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body bg-dark">
+                <form id="form-recuCuenta">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo</label>
+                        <p class="text-white">Ingrese el correo con el que se registro en nuestra plataforma</p>
+                        <input type="email" class="form-control" id="emailRecu" aria-describedby="emailHelp">
+                    </div>
+                    <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal"
+                        onclick="recuperarCuenta()">Enviar</button>
+                    <button type="button" class="btn btn-dark text-white"
+                        data-bs-dismiss="modal">Cerrar</button>
+                </form>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Enviar</button>
+        <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- FIN MODAL DE RECUPERACION DE CUENTA -->
+<!-- MODAL DE CERRAR SESION -->
+<div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white" id="exampleModalLabel">¿Cerrar Sesion?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <button type="submit" class="btn btn-danger text-white"
+                    data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal"
+                    onclick="cerrarSesion()">Cerrar Sesion</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+<!-- FIN MODAL DE CERRAR SESION-->
+
   <script src="../js/login.js"></script>
 </body>
 

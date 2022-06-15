@@ -125,7 +125,7 @@ let listaJuegos = [
         "screenshot1": "https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_ac7c64c8d10bb5786694891e4a22b07a5da7dd6f.1920x1080.jpg?t=1649058967",
         "screenshot2": "https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_4370916476e44c78b50bfee175f1d82285f6bfd7.1920x1080.jpg?t=1649058967",
         "screenshot3": "https://cdn.akamai.steamstatic.com/steam/apps/1190460/ss_39f107106c83eb3717a1061fa1da0f2f4bdf3993.1920x1080.jpg?t=1649058967",
-        "video": "http://cdn.akamai.steamstatic.com/steam/apps/256814570/movie480.mp4?t=1608214699",
+        "video": "https://cdn.cloudflare.steamstatic.com/steam/apps/256814223/movie_max.webm",
         "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/1190460/capsule_231x87.jpg",
         "price": "59.99",
         "published": true,

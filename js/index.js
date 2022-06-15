@@ -38,12 +38,13 @@ let cargarGames = () => {
     categoryContainer.appendChild(categoryContent)
 
     //Filtrar el array de juegos para cada genero
-    let gameGrid = juegos.filter((juego) => juego.genre.includes(genero));
+    let gameGrid = juegos.filter((juego) => juego.published == true);
+    gameGrid = gameGrid.filter((juego) => juego.genre.includes(genero));
     gameGrid = gameGrid.sort(() => Math.random() - 0.5).slice(0, 12);
 
-    //Generar la grilla para cada genero
-    gameGrid.forEach((juego, index) => {
-      let generosComa = juego.genre.join(", ");
+    //Generar la grilla para cada genero    
+    gameGrid.forEach((juego, index) => {      
+        let generosComa = juego.genre.join(", ");
       let div=document.createElement('div')
       div.setAttribute("class","col-6 col-md-3 col-lg-2")  
       let cardContent=`<div class="card">
@@ -58,7 +59,7 @@ let cargarGames = () => {
                      </div>`
      div.innerHTML=cardContent
      let categoryContent2=document.getElementById(`category${genero}`)
-     categoryContent2.appendChild(div)
+     categoryContent2.appendChild(div)          
     });
   });
 };
@@ -66,7 +67,7 @@ let cargarGames = () => {
 //Generar Carousel
 function cargarCarrusel(){
   let juegosDestacados=juegos.filter((juego)=>juego.featured==true)
-  console.log(juegosDestacados)
+  // console.log(juegosDestacados)
   juegosDestacados.sort(function(b, a) { 
     return a.id - b.id;
   });

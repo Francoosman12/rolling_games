@@ -48,4 +48,7 @@
 
 .cotaninerGenero{
   margin-top: 90px;
+  height: auto;
+  min-height: 70%;
 }
+

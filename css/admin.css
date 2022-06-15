@@ -30,3 +30,8 @@ body {
 .asterisk{
     color:#ff0000
 }
+
+.containerPermiso{
+    margin-top: 70px !important;
+    min-height: 100vw;
+}

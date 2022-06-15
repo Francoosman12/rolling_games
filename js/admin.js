@@ -5,13 +5,16 @@ const validarUsuario = () => {
 
     let div = document.createElement("div");
     div.classList = "container";
+    div.setAttribute("class","containerPermiso")
     let estructura = `<div class="row mt-5">
     <div class="col">
       <div class="alert alert-danger" role="alert">
         No tiene permisos para ver esta página
       </div>
       <div>
-      <a href="../index.html">Volver</a>
+      <Button class="btn btn-primary">
+      <a href="../index.html" style="text-decoration: none !important;color:white;">Volver</a>
+      </Button>
       </div>
     </div>
   </div>`;

@@ -3,16 +3,18 @@ let logUser = JSON.parse(localStorage.getItem("userLogin"));
 
 function handleSubmit(e) {
   e.preventDefault();
+  console.log("funcion start")
   let emailLogin = document.querySelector("#emailLogin").value;
   let pass = document.querySelector("#passLogin").value;
   //buscamos el correo del usuario
   let validacion = usuario.find((user) => {
     return user.email === emailLogin;
-  });
-  if (validacion) {
-    if (validacion.password === pass) {
+    console.log(validacion) 
+  });  
+  if (validacion) {    
+    if (validacion.password === pass) {      
       //guardamos la sesion del usuario
-      localStorage.setItem("userLogin", JSON.stringify(validacion));
+      localStorage.setItem("userLogin", JSON.stringify(validacion));      
       if(window.location.pathname.split("/").pop()=='index.html'){
         location.replace("./index.html");
       }else{
@@ -36,17 +38,26 @@ function cerrarSesion() {
   }
 }
 
-// function recuperarCuenta(){
-//   let imputCorreo = document.getElementById('emailRecu').value;
-//   console.log(imputCorreo)
-//   if(usuario.email === imputCorreo){
-//     alert('Le enviamos un mail con la informacion necesaria para recuperar su cuenta')
-//     location.replace("../index.html");
-//   }else{
-//     alert('El correo ingresado no es valido');
-//     location.replace("../index.html");
-//   }
-// }
+function recuperarCuenta(){
+  let imputCorreo = document.getElementById('emailRecu').value;
+  // console.log(imputCorreo)
+  
+
+  let email = usuario.find((x) => x.email == imputCorreo).email||[];
+  // console.log(email)
+  
+  if(email){
+    if (email===imputCorreo){
+      alert('Le enviamos un mail con la informacion necesaria para recuperar su cuenta')
+    }  
+   else{    
+    alert('El correo ingresado no es valido');
+  }
+}else{    
+  alert('El correo ingresado no es valido');
+}
+}
+
 document.getElementById("form-login").addEventListener("submit", handleSubmit);
 
 function modificarNav() {

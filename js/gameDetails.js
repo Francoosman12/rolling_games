@@ -8,7 +8,7 @@ function rellenarCampos() {
 
   //Busca el juego por su ID
   let game = juegos.find((x) => x.id == selectedGame);
-  console.log(game)
+  // console.log(game)
 
   document.title = `${game.title} on RollingGames`;
   document.getElementById("game_title").innerText = game.title;
@@ -31,7 +31,7 @@ function rellenarCampos() {
   document.getElementById("thumbnail2").setAttribute("src", game.screenshot2);
   document.getElementById("thumbnail3").setAttribute("src", game.screenshot3);
   game.genre.forEach(genero => {
-    console.log(genero)
+    // console.log(genero)
     let span=document.createElement('span')
     span.setAttribute("class","infoGenre")
     span.innerHTML=genero
@@ -54,5 +54,13 @@ $(document).ready( function() {
 });
 
 
+document.getElementsByClassName("thumbnailCar")
+addEventListener('click', function () {
+  document.querySelector("#video1").pause()
+})
+
+function playVideo(){
+  setTimeout(function(){ document.querySelector("#video1").play(); }, 500);  
+}
 
 rellenarCampos();

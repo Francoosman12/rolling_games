@@ -67,6 +67,7 @@ let cargarGames = () => {
 //Generar Carousel
 function cargarCarrusel(){
   let juegosDestacados=juegos.filter((juego)=>juego.featured==true)
+  juegosDestacados = juegosDestacados.filter((juego) => juego.published == true);
   // console.log(juegosDestacados)
   juegosDestacados.sort(function(b, a) { 
     return a.id - b.id;

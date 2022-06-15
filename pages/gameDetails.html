@@ -1,62 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/style-footer.css">
-    <link rel="stylesheet" href="../css/gameDetails.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/ico.ico"/>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/style-footer.css">
+  <link rel="stylesheet" href="../css/gameDetails.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/ico.ico" />
 
 
-    <title></title>
-  </head>
-  <body>
-      <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="foto-navbar"
-            src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav" id="listaMenu">
-            <li class="nav-item">
-              <div class="searchBox">
-                <form action="../pages/search.html" method="get" class="d-flex">
-                  <input class="searchInput form-control rounded" type="text" name="searchResults" placeholder="Search">
-                  <button class="btn btn-danger" href="#">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </form>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link botones active" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item" id="loginNav">
-              <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
-            </li>
-            <li class="nav-item" id="regNav">
-              <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
-                href="../pages/registro.html">Register</a>
-            </li>
-          </ul>
-        </div>
+  <title></title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img class="foto-navbar"
+          src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="listaMenu">
+          <li class="nav-item">
+            <div class="searchBox">
+              <form action="../pages/search.html" method="get" class="d-flex">
+                <input class="searchInput form-control rounded" type="text" name="searchResults" placeholder="Search">
+                <button class="btn btn-danger" href="#">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link botones active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item" id="loginNav">
+            <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
+          </li>
+          <li class="nav-item" id="regNav">
+            <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
+              href="../pages/registro.html">Register</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- FIN DE NAVBAR -->
+  <!-- FIN DE NAVBAR -->
 
-       <!-- MODAL DE LOGIN -->
+  <!-- MODAL DE LOGIN -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -120,7 +122,8 @@
         </div>
         <div class="modal-body bg-dark">
           <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal" onclick="cerrarSesion()">Log Out</button>
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal" onclick="cerrarSesion()">Log
+            Out</button>
           </form>
         </div>
       </div>
@@ -128,78 +131,79 @@
   </div>
   <!-- FIN MODAL DE CERRAR SESION-->
 
-    <main>
-        <div id="popup" style="display:none" class="text-center">            
-            <button id="popup-close" class="btn btn-danger">Close</button>
-            <p>
-                <img id="image-placeholder" src="">
-            </p>
-        </div>
+  <main>
+    <div id="popup" style="display:none" class="text-center">
+      <button id="popup-close" class="btn btn-danger">Close</button>
+      <p>
+        <img id="image-placeholder" src="">
+      </p>
+    </div>
 
-    <div class="hero"><img src="" alt="" srcset="" id="library_hero_img"></div> 
-    <div class="container">        
-        <div class="row">            
-            <div class="col-12 col-lg-6 info1 d-flex justify-content-center">
-                <div class="div gameInfo">
-                   <div class="gameInfoTop">
-                    <h1 id="game_title"></h1>
-                    <!-- <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/502500/logo.png?t=1653601523" id="game_logo" alt="" srcset=""> -->
-                    <div class="div gameInfoText">
-                    <p id="game_developer"></p>
-                    <div id="generos">
+    <div class="hero"><img src="" alt="" srcset="" id="library_hero_img"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 info1 d-flex justify-content-center">
+          <div class="div gameInfo">
+            <div class="gameInfoTop">
+              <h1 id="game_title"></h1>
+              <!-- <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/502500/logo.png?t=1653601523" id="game_logo" alt="" srcset=""> -->
+              <div class="div gameInfoText">
+                <p id="game_developer"></p>
+                <div id="generos">
 
-                    </div>
-                    <!-- <span class="infoGenre">Action</span>
+                </div>
+                <!-- <span class="infoGenre">Action</span>
                     <span class="infoGenre">Adventure</span> -->
-                    <p id="price"></p>
-                    </div>
-                    
-                   </div>
-                   <div class="gameInfoBottom text-center">
-                    <a href="something" class="buttonBuy" style="background-color:#640000">Buy</a>
-                    <a href="something" class="buttonBuy" style="background-color:#f14e4e00">Add to Cart</a>
-                    <!-- <button type="button" class="btn btn-success btn-lg mt-3" id="button_buy" style="background-color:#ff0000">Buy</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg mt-3" id="button_cart">Add to Cart</button> -->
-                   </div>
-                   <div class="gameInfoDesc">
-                    <h3>About the Game</h3>
-                    <br>
-                    <p id="description"></p>
-                   </div>
-                </div>
+                <p id="price"></p>
+              </div>
+
             </div>
-            <div class="col-12 col-lg-6 info2">
-                <div class="div carousel-top">
+            <div class="gameInfoBottom text-center">
+              <a href="../pages/404.html" class="buttonBuy" style="background-color:#640000">Buy</a>
+              <a href="../pages/404.html" class="buttonBuy" style="background-color:#f14e4e00">Add to Cart</a>
+              <!-- <button type="button" class="btn btn-success btn-lg mt-3" id="button_buy" style="background-color:#ff0000">Buy</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg mt-3" id="button_cart">Add to Cart</button> -->
+            </div>
+            <div class="gameInfoDesc">
+              <h3>About the Game</h3>
+              <br>
+              <p id="description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 info2">
+          <div class="div carousel-top">
+          </div>
+          <div class="container-carousel ">
+            <!-- carousel -->
+            <div id="custCarousel" class="carousel slide" data-bs-ride="carousel" align="center">
+              <!-- slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="999999999">
+                  <video id="video1" controls autoplay muted src=""></video>
                 </div>
-                <div class="container-carousel ">
-                <!-- carousel -->
-                <div id="custCarousel" class="carousel slide"  data-bs-ride="carousel" align="center">
-                    <!-- slides -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="999999999">                        
-                        <video id="video1" controls autoplay muted src=""></video>
-                      </div>
-            
-                      <div class="carousel-item" data-bs-interval="2500">                        
-                        <a class="popup-open" href="" id="screenshot1"><img  src="" alt="Sreenshot 1"></a>
-                      </div>
-            
-                      <div class="carousel-item popup-open" data-bs-interval="2500">
-                        <a class="popup-open" href="" id="screenshot2"><img  src="" alt="Sreenshot 3"></a>
-                      </div>
-            
-                      <div class="carousel-item popup-open" data-bs-interval="2500">
-                        <a class="popup-open" href="" id="screenshot3"><img  src="" alt="Sreenshot 3"></a>
-                      </div>
-                    </div>
-            
-                    <!-- Left right -->
-                    <!-- <a class="carousel-control-prev" href="#custCarousel" data-bs-slide="prev">
+
+                <div class="carousel-item" data-bs-interval="2500">
+                  <a class="popup-open" href="" id="screenshot1"><img src="" alt="Sreenshot 1"></a>
+                </div>
+
+                <div class="carousel-item popup-open" data-bs-interval="2500">
+                  <a class="popup-open" href="" id="screenshot2"><img src="" alt="Sreenshot 3"></a>
+                </div>
+
+                <div class="carousel-item popup-open" data-bs-interval="2500">
+                  <a class="popup-open" href="" id="screenshot3"><img src="" alt="Sreenshot 3"></a>
+                </div>
+              </div>
+
+              <!-- Left right -->
+              <!-- <a class="carousel-control-prev" href="#custCarousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next" href="#custCarousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon"></span>
                     </a> -->
+
             
                     <!-- Thumbnails -->
                     <ol class="carousel-indicators list-inline">
@@ -233,52 +237,59 @@
 
                 <!-- carousel -->
             </div>
+
             </div>
-        </div>
-    </div>
-</main>
 
-<!-- contenido de footer -->
 
-<footer class="footer">
-  <div class="container container-footer pt-3 ">
-    <div class="row mt-3">
-      <div class="col px-3 text-center footer-contact">
-        <button class="botonFooter">
-          <a href="../pages/sobreNosotros.html"><span>About Us</span></a>
-        </button>
-        <button class="botonFooter">
-          <a href="../pages/contacto.html"><span>Contact us</span></a>
-        </button>
-      </div>
-    </div>
 
-    <div class="row px-3 mt-2 footer-links">
-      <div class="col-4 col-md-12 text-center divSiguenos">
-        <span class="siguenos" >FOLLOW US</span>
-    </div>
-      <div class="col text-center">
-        <a href="../pages/404.html"><span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span></a>
-      </div>
-      <div class="col text-center">
-        <a href="../pages/404.html"><span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span></a>
-      </div>
-      <div class="col text-center">
-        <a href="../pages/404.html"><span><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></span></a>
-      </div>
-      <div class="col text-center">
-        <a href="../pages/404.html"><span><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="copyright-text">
-          <p class=" text-center">Copyright &copy; 2022 All Rights Reserved by <b>RollingGames</b>.</p>
+            <!-- carousel -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </main>
+
+  <!-- contenido de footer -->
+
+  <footer class="footer">
+    <div class="container container-footer pt-3 ">
+      <div class="row mt-3">
+        <div class="col px-3 text-center footer-contact">
+          <button class="botonFooter">
+            <a href="../pages/sobreNosotros.html"><span>About Us</span></a>
+          </button>
+          <button class="botonFooter">
+            <a href="../pages/contacto.html"><span>Contact us</span></a>
+          </button>
+        </div>
+      </div>
+
+      <div class="row px-3 mt-2 footer-links">
+        <div class="col-4 col-md-12 text-center divSiguenos">
+          <span class="siguenos">FOLLOW US</span>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="col text-center">
+          <a href="../pages/404.html"><span><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="copyright-text">
+            <p class=" text-center">Copyright &copy; 2022 All Rights Reserved by <b>RollingGames</b>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -286,24 +297,24 @@
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-    
-<script src="https://kit.fontawesome.com/dfb7276bfd.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<script src="../js/games.js"></script>
-<script src="../js/gameDetails.js"></script>
-<script src="../js/login.js"></script>
-  </body>
-  
+
+  <script src="https://kit.fontawesome.com/dfb7276bfd.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script src="../js/games.js"></script>
+  <script src="../js/gameDetails.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
 </html>
-
-

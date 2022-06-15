@@ -1,5 +1,5 @@
 html {
-    margin: 1% 2%;
+    margin-top: 1%;
     scroll-behavior: smooth;
   }
   body{
@@ -13,6 +13,8 @@ html {
 
   .container-title{
       margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
   }
   .title{
     display: flex;
@@ -27,6 +29,8 @@ html {
       margin-top: 5px;
       padding: 10px;
       background-color: rgba(0, 0, 0,0.5);
+      margin-left: 5%;
+      margin-right: 5%;
   }
   .form-registro{
       width: 60%;

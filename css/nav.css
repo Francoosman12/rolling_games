@@ -3,7 +3,7 @@ html {
 }
 
 main{
-  margin: 1% 8%;
+  margin: 0;
 }
 
 nav {
@@ -65,7 +65,7 @@ nav {
 /* MOBILE */
 @media (max-width: 768px) {
   html {
-    margin: 0% 2%;
+    /* margin: 0% 2%; */
     scroll-behavior: smooth;
   }
   .foto-navbar {

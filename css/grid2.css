@@ -68,3 +68,10 @@ body {
 .game:hover:before {
   background-position: 50%;
 }
+
+.cotaninerGenero{
+  margin-top: 90px;
+  height: auto;
+  min-height: 70%;
+}
+

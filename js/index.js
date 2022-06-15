@@ -92,7 +92,7 @@ function cargarCarrusel(){
        
       <!-- <h1>Titulo</h1>-->
       <p class="text-center">${juego.description}</p>
-      <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
+      <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${juego.id})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
     </div>`
     // <div class="d-block d-md-none">
     // <button type="button" class="btn btn-danger btn-sm" onclick="mostrarDetalles(${index})" href="./pages/gameDetails.html?gameID=${juego.id}">See More</button>
@@ -114,7 +114,7 @@ function cargarCarrusel(){
 }
 
 function mostrarDetalles(e) {
-  window.location.href = `./pages/gameDetails.html?gameID=${juego.id}`;
+  window.location.href = `./pages/gameDetails.html?gameID=${e}`;
 }
 
 function mostrarGenero(e) {  

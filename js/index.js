@@ -6,8 +6,9 @@ let generos = [
   "Action",
   "Adventure",
   "FPS",
+  "Fighting",
   "RPG",
-  "Shooter"
+  "Shooter",  
 ];
 
 let categoryContainer=document.getElementById("categoriesContainer")

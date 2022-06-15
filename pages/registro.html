@@ -62,66 +62,67 @@
 
     <!-- REGISTRO -->
     <main>
-    <div class="container-title">
-        <div class="row">
-            <div class="col">
-                <h1 class="title">Register a new account</h1>
+        <div class="container-title">
+            <div class="row">
+                <div class="col">
+                    <h1 class="title">Register a new account</h1>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-registro d-flex">
-        <div class="form-registro">
-            <div class="row">
-                <div class="col-md-12 col-lg-9">
-                    <form id="formRegistro">
-                        <div class="mb-3">
-                            <label for="textName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="textName" placeholder="Enter your first name"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="textSurname" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="textSurname" placeholder="Enter your last name"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="user@domain.com" required id="email"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text text-white">We'll never share your email with
-                                anyone else.
+        <div class="container-registro d-flex">
+            <div class="form-registro">
+                <div class="row">
+                    <div class="col-md-12 col-lg-9">
+                        <form id="formRegistro">
+                            <div class="mb-3">
+                                <label for="textName" class="form-label">First Name</label>
+                                <input type="text" pattern="[A-Z a-z]{3,30}" class="form-control" id="textName"
+                                    placeholder="Enter your first name" required>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Input your password"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password2" class="form-label">Repetir Password</label>
-                            <input type="password" class="form-control" id="password2"
-                                placeholder="Repeat your password" required>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                            <label class="form-check-label text-white" for="exampleCheck1">Do you accept the terms and
-                                conditions?</label>
-                        </div>
-                        <button type="submit" class="btn btn-danger float-end">Submit</button>
-                    </form>
+                            <div class="mb-3">
+                                <label for="textSurname" pattern="[A-Z a-z]{3,30}" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="textSurname"
+                                    placeholder="Enter your last name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="user@domain.com" required
+                                    id="email" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text text-white">We'll never share your email with
+                                    anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Input your password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password2" class="form-label">Repetir Password</label>
+                                <input type="password" class="form-control" id="password2"
+                                    placeholder="Repeat your password" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label text-white" for="exampleCheck1">Do you accept the terms
+                                    and
+                                    conditions?</label>
+                            </div>
+                            <button type="submit" class="btn btn-danger float-end">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="gif-registro">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <img src="https://img.itch.zone/aW1nLzIxMTExODMuZ2lm/original/hihbxp.gif" class="gif" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="gif-registro">
-            <div class="row">
-                <div class="col-md-6 col-lg-6">
-                    <img src="https://img.itch.zone/aW1nLzIxMTExODMuZ2lm/original/hihbxp.gif" class="gif" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+    </main>
     <!-- FIN DE REGISTRO -->
     <!-- FIN CATEGORIAS -->
 

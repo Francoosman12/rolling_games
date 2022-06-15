@@ -17,52 +17,50 @@
 <body>
     <header>
         <!-- Navbar -->
-
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="foto-navbar"
-                        src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="listaMenu">
-                        <li class="nav-item">
-                            <div class="searchBox">
-                                <form action="../pages/search.html" method="get" class="d-flex">
-                                <input class="searchInput form-control rounded"type="text" name="searchResults" placeholder="Search">
-                                <button class="btn btn-danger" href="#">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                                </form>
-                            </div>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link botones active" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item" id="loginNav">
-                            <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal"
-                                href="#">Login</a>
-                        </li>
-                        <li class="nav-item" id="regNav">
-                            <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
-                                href="./registro.html">Registro</a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="foto-navbar"
+              src="../assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" id="listaMenu">
+              <li class="nav-item">
+                <div class="searchBox">
+                  <form action="../pages/search.html" method="get" class="d-flex">
+                    <input class="searchInput form-control rounded" type="text" name="searchResults" placeholder="Search">
+                    <button class="btn btn-danger" href="#">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
                 </div>
-            </div>
-        </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link botones active" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item" id="loginNav">
+                <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
+              </li>
+              <li class="nav-item" id="regNav">
+                <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
+                  href="./pages/registro.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- FIN DE NAVBAR -->
 
-        <!-- FIN DE NAVBAR -->
     </header>
 
     <!-- REGISTRO -->
     <div class="container-title">
         <div class="row">
             <div class="col">
-                <h1 class="title">Registrarse</h1>
+                <h1 class="title">Register a new account</h1>
             </div>
         </div>
     </div>
@@ -73,18 +71,18 @@
                 <div class="col-md-12 col-lg-9 ">
                     <form id="formRegistro">
                         <div class="mb-3">
-                            <label for="textName" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="textName" placeholder="Ingrese su nombre"
+                            <label for="textName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="textName" placeholder="Enter your first name"
                                 required>
                         </div>
                         <div class="mb-3">
-                            <label for="textSurname" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="textSurname" placeholder="Ingrese su apellido"
+                            <label for="textSurname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="textSurname" placeholder="Enter your last name"
                                 required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="usuario@gmail.com" required id="email"
+                            <input type="email" class="form-control" placeholder="user@domain.com" required id="email"
                                 aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text text-white">We'll never share your email with
                                 anyone else.
@@ -93,17 +91,16 @@
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password"
-                                placeholder="Ingrese la contraseña" required>
+                                placeholder="Input your password" required>
                         </div>
                         <div class="mb-3">
                             <label for="password2" class="form-label">Repetir Password</label>
                             <input type="password" class="form-control" id="password2"
-                                placeholder="Repita la contraseña" required>
+                                placeholder="Repeat your password" required>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                            <label class="form-check-label text-white" for="exampleCheck1">Acepta los términos y
-                                condiciones.</label>
+                            <label class="form-check-label text-white" for="exampleCheck1">Do you accept the terms and conditions?</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -121,36 +118,78 @@
 
     <!-- FIN DE REGISTRO -->
     <!-- FIN CATEGORIAS -->
-    <!-- MODAL DE LOGIN -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-        id="modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-dark">
-                    <h5 class="modal-title text-white" id="exampleModalLabel">Iniciar sesion</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-dark">
-                    <form id="form-login">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="passLogin">
-                            <a href="#">¿No recuerdas tu contraseña?</a>
-                        </div>
-                        <button type="submit" class="btn btn-danger text-white"
-                            data-bs-dismiss="modal">Ingresar</button>
-                    </form>
-                </div>
-                <div class="modal-footer bg-dark">
-                    <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+    
+     <!-- MODAL DE LOGIN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body bg-dark">
+          <form id="form-login">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passLogin">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#recuCuenta">Forgot your password?</a>
+            </div>
+            <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Log In</button>
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- FIN MODAL DE LOGIN -->
+  <!-- MODAL DE RECUPERACION DE CUENTA -->
+  <div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body bg-dark">
+          <form id="form-recuCuenta">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <p class="text-white">Enter your email address</p>
+              <input type="email" class="form-control" id="emailRecu" aria-describedby="emailHelp">
+            </div>
+            <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal"
+              onclick="recuperarCuenta()">Send</button>
+            <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
+          </form>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- FIN MODAL DE RECUPERACION DE CUENTA -->
+  <!-- MODAL DE CERRAR SESION -->
+  <div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Do you really want to log out?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal" onclick="cerrarSesion()">Log Out</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL DE CERRAR SESION-->
 
     <!-- contenido de footer -->
 
@@ -159,17 +198,17 @@
             <div class="row mt-3">
                 <div class="col px-3 text-center footer-contact">
                     <button class="botonFooter">
-                        <a href="../pages/sobreNosotros.html"><span>Conocenos</span></a>
+                        <a href="../pages/sobreNosotros.html"><span>About Us</span></a>
                     </button>
                     <button class="botonFooter">
-                        <a href="../pages/contacto.html"><span>Contacto</span></a>
+                        <a href="../pages/contacto.html"><span>Contact us</span></a>
                     </button>
                 </div>
             </div>
 
             <div class="row px-3 mt-2 footer-links">
-                <div class="col-4 col-md-12 text-center">
-                    <span class="siguenos">SIGUENOS</span>
+                <div class="col-4 col-md-12 text-center divSiguenos">
+                    <span class="siguenos" >FOLLOW US</span>
                 </div>
                 <div class="col text-center">
                     <a href="../pages/404.html"><span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span></a>

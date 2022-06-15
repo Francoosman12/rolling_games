@@ -13,7 +13,12 @@ function handleSubmit(e) {
     if (validacion.password === pass) {
       //guardamos la sesion del usuario
       localStorage.setItem("userLogin", JSON.stringify(validacion));
-      location.replace("../index.html");
+      if(window.location.pathname.split("/").pop()=='index.html'){
+        location.replace("./index.html");
+      }else{
+        location.replace("../index.html");
+      }
+      
     } else {
       alert("El correo o password son incorrectos");
     }
@@ -24,7 +29,11 @@ function handleSubmit(e) {
 
 function cerrarSesion() {
   localStorage.removeItem("userLogin");
-  location.replace("../index.html");
+  if(window.location.pathname.split("/").pop()=='index.html'){
+    location.replace("./index.html");
+  }else{
+    location.replace("../index.html");
+  }
 }
 
 // function recuperarCuenta(){
@@ -51,7 +60,7 @@ function modificarNav() {
     // Opciones de Usuario
     let btnUser = document.createElement("li");
     btnUser.classList = "nav-item";
-    let optionUser = `<a class="nav-link botones active" href="#" data-bs-toggle="modal" data-bs-target="#cerrarSesion">Hola ${logUser.nombre}</a>`;
+    let optionUser = `<a class="nav-link botones active" href="#" data-bs-toggle="modal" data-bs-target="#cerrarSesion">Hello ${logUser.nombre} ${logUser.apellido}</a>`;
     btnUser.innerHTML = optionUser;
     listContainer.appendChild(btnUser);
 
@@ -59,8 +68,15 @@ function modificarNav() {
     if (logUser.rol === "admin") {
       let btnAdmin = document.createElement("li");
       btnAdmin.classList = "nav-item";
-      let opcionAdmin = `<a class="nav-link botones active"
+      let opcionAdmin=""
+      if(window.location.pathname.split("/").pop()=='index.html'){
+        opcionAdmin = `<a class="nav-link botones active"
        href="./pages/admin.html">Admin</a>`;
+      }else{
+        opcionAdmin = `<a class="nav-link botones active"
+       href="../pages/admin.html">Admin</a>`;
+      }
+      
       btnAdmin.innerHTML = opcionAdmin;
       listContainer.appendChild(btnAdmin);
     }

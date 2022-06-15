@@ -21,44 +21,42 @@
 
     <main>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="foto-navbar"
-                        src="./assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="listaMenu">
-                        <li class="nav-item">
-                            <div class="searchBox">
-                                <form action="../pages/search.html" method="get" class="d-flex">
-                                <input class="searchInput form-control rounded"type="text" name="searchResults" placeholder="Search">
-                                <button class="btn btn-danger" href="#">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                                </form>
-                            </div>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link botones active" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item" id="loginNav">
-                            <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal"
-                                href="#">Login</a>
-                        </li>
-                        <li class="nav-item" id="regNav">
-                            <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
-                                href="./pages/registro.html">Register</a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="foto-navbar"
+              src="./assets/img/rolling games 2 (1) (online-video-cutter.com).gif" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" id="listaMenu">
+              <li class="nav-item">
+                <div class="searchBox">
+                  <form action="./pages/search.html" method="get" class="d-flex">
+                    <input class="searchInput form-control rounded" type="text" name="searchResults" placeholder="Search">
+                    <button class="btn btn-danger" href="#">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
                 </div>
-            </div>
-        </nav>
-
-        <!-- FIN DE NAVBAR -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link botones active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item" id="loginNav">
+                <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Login</a>
+              </li>
+              <li class="nav-item" id="regNav">
+                <a class="nav-link botones active" data-bs-toggle="modal" data-bs-target=""
+                  href="./pages/registro.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- FIN DE NAVBAR -->
 
         <!-- CARRUSEL -->
 
@@ -142,85 +140,77 @@
         </div>
 
         <!-- FIN CATEGORIAS -->
-        <!-- MODAL DE LOGIN -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header bg-dark">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">Sign In</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body bg-dark">
-                        <form id="form-login">
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="passLogin">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#recuCuenta">Forgot your password?</a>
-                            </div>
-                            <button type="submit" class="btn btn-danger text-white"
-                                data-bs-dismiss="modal">Sign In</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer bg-dark">
-                        <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
+         <!-- MODAL DE LOGIN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body bg-dark">
+          <form id="form-login">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passLogin">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#recuCuenta">Forgot your password?</a>
+            </div>
+            <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Log In</button>
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- FIN MODAL DE LOGIN -->
-        <!-- MODAL DE RECUPERACION DE CUENTA -->
-        <div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body bg-dark">
-                        <form id="form-recuCuenta">
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Correo</label>
-                                <p class="text-white">Ingrese el correo con el que se registro en nuestra plataforma</p>
-                                <input type="email" class="form-control" id="emailRecu" aria-describedby="emailHelp">
-                            </div>
-                            <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal"
-                                onclick="recuperarCuenta()">Enviar</button>
-                            <button type="button" class="btn btn-dark text-white"
-                                data-bs-dismiss="modal">Cerrar</button>
-                        </form>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Enviar</button>
-                <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Cerrar</button>
-                </form>
+  <!-- FIN MODAL DE LOGIN -->
+  <!-- MODAL DE RECUPERACION DE CUENTA -->
+  <div class="modal fade" id="recuCuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body bg-dark">
+          <form id="form-recuCuenta">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <p class="text-white">Enter your email address</p>
+              <input type="email" class="form-control" id="emailRecu" aria-describedby="emailHelp">
             </div>
+            <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal"
+              onclick="recuperarCuenta()">Send</button>
+            <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Close</button>
+          </form>
         </div>
-        </div>
-        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
 
-        <!-- FIN MODAL DE RECUPERACION DE CUENTA -->
-        <!-- MODAL DE CERRAR SESION -->
-        <div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header bg-dark">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">¿Cerrar Sesion?</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body bg-dark">
-                        <button type="submit" class="btn btn-danger text-white"
-                            data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal"
-                            onclick="cerrarSesion()">Cerrar Sesion</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  <!-- FIN MODAL DE RECUPERACION DE CUENTA -->
+  <!-- MODAL DE CERRAR SESION -->
+  <div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Do you really want to log out?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body bg-dark">
+          <button type="submit" class="btn btn-danger text-white" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal" onclick="cerrarSesion()">Log Out</button>
+          </form>
         </div>
-    </main>
-    <!-- FIN MODAL DE CERRAR SESION-->
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL DE CERRAR SESION-->
 
 
 
@@ -231,17 +221,17 @@
             <div class="row mt-3">
                 <div class="col px-3 text-center footer-contact">
                     <button class="botonFooter">
-                        <a href="../pages/sobreNosotros.html"><span>Conocenos</span></a>
+                        <a href="../pages/sobreNosotros.html"><span>About Us</span></a>
                     </button>
                     <button class="botonFooter">
-                        <a href="../pages/contacto.html"><span>Contacto</span></a>
+                        <a href="../pages/contacto.html"><span>Contact us</span></a>
                     </button>
                 </div>
             </div>
 
             <div class="row px-3 mt-2 footer-links">
-                <div class="col-4 col-md-12 text-center">
-                    <span class="siguenos">SIGUENOS</span>
+                <div class="col-4 col-md-12 text-center divSiguenos">
+                    <span class="siguenos" >FOLLOW US</span>
                 </div>
                 <div class="col text-center">
                     <a href="./pages/404.html"><span><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></span></a>

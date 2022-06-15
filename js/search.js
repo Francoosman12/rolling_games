@@ -44,3 +44,15 @@ loadGames();
 function mostrarDetalles(e) {
   location.replace = `../pages/gameDetails.html?gameID=${juego.id}`;
 }
+
+
+const checkEmpty = document.querySelector('#checkIt');
+checkEmpty.addEventListener('input', function () {
+  if (checkEmpty.value && // if exist AND
+    checkEmpty.value.length > 0 && // if value have one charecter at least
+    checkEmpty.value.trim().length > 0 // if value is not just spaces
+  ) 
+  { console.log('value is:    '+checkEmpty.value);}
+  else {console.log('No value'); 
+  }
+});

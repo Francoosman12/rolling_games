@@ -6,102 +6,68 @@ body {
 	font-family: "Baloo 2", cursive;
 	font-size: 16px;
 	color: #f7eeee;
-	text-rendering: optimizeLegibility;
-	font-weight: initial;
+	/* text-rendering: optimizeLegibility; */
+	/* font-weight: initial; */
 }
 
-.dark {
-	background: rgba(rgb(15, 15, 15), rgb(183, 192, 183), rgb(55, 55, 58),);
-    margin: 50px;
-	height: 400px;
-	margin-top: 10%;    
+.container-nosotros{
+ margin-top: 10px;
+ display: flex;
+ margin-left: 5%;
+ margin-right: 5%;
+ padding: 10px;
+ background-color: rgba(0, 0, 0,0.5);
+}
+.container-title{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title{
+    display: flex;
+    color: white;
+    margin-top: 2em;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+.image-nosotros{
+	padding: 15px;
+	text-align: center;
+}
+
+.descripcion-nosotros{
+	padding: 20px;
+	text-align: center;
+	margin-top: 15%;
 }
 
 
-
-/* Cards */
-.postcard {
-	flex-wrap: wrap;
-	display: flex;
-
-	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-	border-radius: 10px;
-	margin: 0 0 2rem 0;
-	overflow: hidden;
-	position: relative;
-	color: #ffffff;
-
-}
-	
-	h1{
-		margin-bottom: 0.5rem;
-		font-weight: 500;
-		line-height: 1.2;
-        
-	}
-
-	
-	.postcard__title {
-		font-size: 1.75rem;
-	}
-
-	.postcard__img {
-		max-height: 180px;
-		width: 100%;
-		object-fit: cover;
-		position: relative;
-        
-	}
-
-	
-
-	
-
-	.postcard__text {
-		padding: 1.5rem;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-     
-	}
-
-	.postcard__preview-txt {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		text-align: justify;
-		height: 100%;
-	}
 
 		
 	
-@media screen and (min-width: 769px) {
-	.postcard {
-		flex-wrap: inherit;
-    }
-		.postcard__title {
-			font-size: 2rem;
-		}
 
-		
 
-		.postcard__img {
-			max-width: 300px;
-			max-height: 100%;
-			transition: transform 0.3s ease;
-		}
-
-		.postcard__text {
-			padding: 3rem;
-			width: 100%;
-		}
-
+@media screen and (max-width: 1024px) {
+	
+	.container-title{
+		margin-top: 30px;
+	}
+	.container-nosotros{
+		display: block;
+	}
+	.img-nosotros{
+		width: 250px;
+		height: 300px;
 	}
 
-@media screen and (min-width: 1024px) {
-	.postcard__text {
-		padding: 2rem 3.5rem;
+    .descripcion-nosotros{
+		padding: 20px;
+		text-align: center;
+		margin-top: 5%;
 	}
-
 
 	
 }

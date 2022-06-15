@@ -38,16 +38,13 @@ html {
     width: 350px;
 }
 
-.info-contacto{
-    width: 30%;
-}
 .informacion-detallada{
     padding-left: 10px;
 }
 
 /* MOBILE */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1024px) {
     .container-contacto{
         display: block;
     }
@@ -59,9 +56,15 @@ html {
     }
     .info-contacto{
         margin-top: 20px;
-        width: 100vw;
+        width: 100%;
+    }
+    .mapa{
+        width: 270px;
     }
     .informacion-detallada{
         padding-left: 5px;
+    }
+    .icon-info{
+        width: 250px;
     }
   }

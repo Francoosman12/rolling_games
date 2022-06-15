@@ -30,6 +30,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="listaMenu">
                         <li class="nav-item">
+                            <div class="searchBox">
+                                <form action="../pages/search.html" method="get" class="d-flex">
+                                <input class="searchInput form-control rounded"type="text" name="searchResults" placeholder="Search">
+                                <button class="btn btn-danger" href="#">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                </form>
+                            </div>
+                          </li>
+                        <li class="nav-item">
                             <a class="nav-link botones active" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item" id="loginNav">
@@ -187,6 +197,7 @@
     </footer>
 
     <!-- FIN MODAL DE LOGIN -->
+    <script src="https://kit.fontawesome.com/dfb7276bfd.js" crossorigin="anonymous"></script>
     <script src="../js/login.js"></script>
     <script src="../js/registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
